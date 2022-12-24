@@ -1,8 +1,8 @@
 {
 	"extends": "@lusc/tsconfig",
 	"compilerOptions": {
-		"outDir": "dist",
-		"rootDir": "src"
-	},
-	"include": ["src/*.ts"]
+		"paths": {
+			"server": ["./src/server/*"]
+		}
+	}
 }

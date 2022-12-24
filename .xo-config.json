@@ -1,0 +1,14 @@
+{
+	"rules": {
+		"no-mixed-spaces-and-tabs": "off",
+		"@typescript-eslint/indent": "off"
+	},
+	"overrides": [
+		{
+			"files": ["src/client/*"],
+			"rules": {
+				"import/extensions": "off"
+			}
+		}
+	]
+}

@@ -1,0 +1,10 @@
+{
+	"extends": "../../tsconfig.json",
+	"compilerOptions": {
+		"noEmit": true,
+		"moduleResolution": "classic",
+		"jsxFactory": "React.createElement",
+		"jsxFragmentFactory": "React.Fragment"
+	},
+	"include": ["*.ts", "*.tsx"]
+}
