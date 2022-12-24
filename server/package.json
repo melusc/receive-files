@@ -7,7 +7,8 @@
 		"@koa/router": "^12.0.0",
 		"concurrently": "^7.6.0",
 		"koa": "^2.14.1",
-		"meow": "^11.0.0"
+		"meow": "^11.0.0",
+		"rimraf": "^3.0.2"
 	},
 	"devDependencies": {
 		"@types/koa": "^2.13.5",
@@ -19,6 +20,7 @@
 		"build:w": "tsc -w",
 		"start:w": "node --watch dist/cli.js",
 		"start": "node dist/cli.js",
-		"dev": "concurrently yarn:build:w yarn:start:w"
+		"dev": "concurrently yarn:build:w yarn:start:w",
+		"clean": "rimraf dist"
 	}
 }

@@ -12,12 +12,14 @@
 	"dependencies": {
 		"process": "^0.11.10",
 		"react": "^18.2.0",
-		"react-dom": "^18.2.0"
+		"react-dom": "^18.2.0",
+		"rimraf": "^3.0.2"
 	},
 	"scripts": {
 		"build": "parcel build src/index.html",
 		"build:w": "parcel watch src/index.html",
-		"dev": "yarn build:w"
+		"dev": "yarn build:w",
+		"clean": "rimraf dist"
 	},
 	"targets": {
 		"default": {
