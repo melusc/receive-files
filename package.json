@@ -3,36 +3,20 @@
 	"packageManager": "yarn@3.3.1",
 	"devDependencies": {
 		"@lusc/tsconfig": "^2.0.0",
-		"@types/koa": "^2.13.5",
-		"@types/koa__router": "^12.0.0",
 		"@types/node": "^18.11.17",
-		"@types/react": "^18.0.26",
-		"@types/react-dom": "^18.0.10",
-		"buffer": "^5.5.0",
-		"parcel": "^2.8.2",
-		"postcss": "^8.4.20",
 		"prettier": "^2.8.1",
-		"process": "^0.11.10",
-		"tailwindcss": "^3.2.4",
 		"typescript": "^4.9.4",
 		"xo": "^0.53.1"
 	},
 	"scripts": {
 		"fmt": "prettier -w . && xo --fix",
-		"build": "yarn build:client && yarn build:server",
-		"dev:server": "yarn build:server && yarn node dist/server/cli.js",
-		"build:client": "parcel build src/client/index.html --dist-dir dist/client",
-		"build:server": "tsc --project src/server/tsconfig.json"
+		"build": "yarn workspaces foreach -i run build",
+		"start": "yarn workspace server start",
+		"dev": "yarn workspaces foreach -pi run dev"
 	},
-	"dependencies": {
-		"@koa/router": "^12.0.0",
-		"koa": "^2.14.1",
-		"meow": "^11.0.0",
-		"react": "^18.2.0",
-		"react-dom": "^18.2.0"
-	},
-	"alias": {
-		"server": "./src/server"
-	},
+	"workspaces": [
+		"server",
+		"client"
+	],
 	"type": "module"
 }
