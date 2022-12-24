@@ -1073,6 +1073,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/etag@npm:^1.8.1":
+  version: 1.8.1
+  resolution: "@types/etag@npm:1.8.1"
+  dependencies:
+    "@types/node": "*"
+  checksum: 93ae9d2eeeee484b9a9edc46581c6d9f32163b61f3f9a8c3df3a9ef903d1efc9c8e5b9146b10c19f3d1f23d40419426cb85eea20cf42cfaa1af3abda2d405cee
+  languageName: node
+  linkType: hard
+
 "@types/express-serve-static-core@npm:^4.17.31":
   version: 4.17.31
   resolution: "@types/express-serve-static-core@npm:4.17.31"
@@ -2972,6 +2981,13 @@ __metadata:
   version: 2.0.3
   resolution: "esutils@npm:2.0.3"
   checksum: 22b5b08f74737379a840b8ed2036a5fb35826c709ab000683b092d9054e5c2a82c27818f12604bfc2a9a76b90b6834ef081edbc1c7ae30d1627012e067c6ec87
+  languageName: node
+  linkType: hard
+
+"etag@npm:^1.8.1":
+  version: 1.8.1
+  resolution: "etag@npm:1.8.1"
+  checksum: 571aeb3dbe0f2bbd4e4fadbdb44f325fc75335cd5f6f6b6a091e6a06a9f25ed5392f0863c5442acb0646787446e816f13cbfc6edce5b07658541dff573cab1ff
   languageName: node
   linkType: hard
 
@@ -5815,9 +5831,11 @@ __metadata:
   resolution: "server@workspace:server"
   dependencies:
     "@koa/router": ^12.0.0
+    "@types/etag": ^1.8.1
     "@types/koa": ^2.13.5
     "@types/koa__router": ^12.0.0
     concurrently: ^7.6.0
+    etag: ^1.8.1
     koa: ^2.14.1
     meow: ^11.0.0
     rimraf: ^3.0.2
