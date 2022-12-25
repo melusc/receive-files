@@ -18,7 +18,7 @@
 		"rimraf": "^3.0.2"
 	},
 	"scripts": {
-		"build": "parcel build src/index.html",
+		"build": "yarn clean && parcel build src/index.html",
 		"build:w": "parcel watch src/index.html",
 		"dev": "yarn build:w",
 		"clean": "rimraf dist"

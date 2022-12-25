@@ -11,10 +11,10 @@
 	},
 	"scripts": {
 		"fmt": "prettier -w . && xo --fix",
-		"build": "yarn clean && yarn workspaces foreach -i run build",
+		"build": "yarn workspaces foreach -iv run build",
 		"start": "yarn workspace server start",
-		"dev": "yarn workspaces foreach -pi run dev",
-		"clean": "yarn workspaces foreach run clean"
+		"dev": "yarn workspaces foreach -piv run dev",
+		"clean": "yarn workspaces foreach -iv run clean"
 	},
 	"workspaces": [
 		"server",
