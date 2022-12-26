@@ -4,9 +4,9 @@ import {cwd, exit} from 'node:process';
 
 import meow from 'meow';
 
-import {Server} from './index.js';
+import {Server} from './server.js';
 
-const _ = meow(
+const {flags, input} = meow(
 	`
 
 	Usage
@@ -14,7 +14,8 @@ const _ = meow(
 	  [path] The path to write the files to, defaults to current dir
 
 	Options
-		--port, -p  The port to run the server on, default 4444
+		--port, -p     The port to run the server on, default 4444
+		--confirm, -c  Wait for confirmation before saving file
 
 `,
 	{
@@ -26,11 +27,16 @@ const _ = meow(
 				type: 'number',
 				default: 4444,
 			},
+			confirm: {
+				alias: 'c',
+				type: 'boolean',
+				default: true,
+			},
 		},
 	},
 );
 
-const path = resolve(_.input[0] ?? cwd());
+const path = resolve(input[0] ?? cwd());
 
 try {
 	await opendir(path);
@@ -39,6 +45,5 @@ try {
 	exit(1);
 }
 
-const server = new Server(_.flags.port, path);
-
-console.log(server.port);
+// eslint-disable-next-line no-new
+new Server(flags.port, path, flags.confirm);
