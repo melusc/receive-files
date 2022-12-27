@@ -2,8 +2,9 @@ import Router from '@koa/router';
 import Koa from 'koa';
 import {koaBody} from 'koa-body';
 
-import {sendStatic} from './send-static.js';
 import {saveFile} from './save-file.js';
+import {sendStatic} from './send-static.js';
+import {getNetworkAddress} from './util.js';
 
 const staticDistDir = new URL('../../client/dist/', import.meta.url);
 
@@ -26,7 +27,14 @@ export class Server {
 		app.use(router.routes());
 
 		app.listen(port, () => {
-			console.log('Running at http://localhost:%s/', port);
+			console.log('Running');
+
+			console.log('- Local:	http://localhost:%s/', port);
+
+			const localIpAddress = getNetworkAddress();
+			if (localIpAddress) {
+				console.log('- Network:	http://%s:%s/', localIpAddress, port);
+			}
 		});
 	}
 
