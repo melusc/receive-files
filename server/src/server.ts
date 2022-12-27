@@ -35,6 +35,8 @@ export class Server {
 			if (localIpAddress) {
 				console.log('- Network:	http://%s:%s/', localIpAddress, port);
 			}
+
+			console.log();
 		});
 	}
 

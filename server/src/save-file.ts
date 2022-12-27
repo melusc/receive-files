@@ -1,6 +1,6 @@
 /* eslint-disable no-await-in-loop */
 
-import {cp, stat} from 'node:fs/promises';
+import {rename, stat} from 'node:fs/promises';
 import {basename, resolve} from 'node:path';
 
 // eslint-disable-next-line import/no-extraneous-dependencies
@@ -56,10 +56,8 @@ async function handle() {
 
 		if (save) {
 			const outPath = resolve(outDir, filename);
-			console.log('Saved "%s"', outPath);
-			await cp(file.filepath, outPath, {
-				force: true,
-			});
+			await rename(file.filepath, outPath);
+			console.log('Saved to "%s"', outPath);
 		}
 	}
 
