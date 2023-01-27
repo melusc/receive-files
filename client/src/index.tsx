@@ -1,5 +1,6 @@
 import React from 'react';
-import {createRoot} from 'react-dom/client.js';
+// eslint-disable-next-line n/file-extension-in-import
+import {createRoot} from 'react-dom/client';
 
 import {App} from './components/app';
 

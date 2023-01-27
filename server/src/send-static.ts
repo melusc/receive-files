@@ -12,7 +12,7 @@ export async function sendStatic(
 	filename: string,
 	distDir: URL,
 ) {
-	if (!/^[\w.]+\.\w+(?:\.map)?$/i.test(filename)) {
+	if (!/^[\w-.]+\.\w+(?:\.map)?$/i.test(filename)) {
 		ctx.throw(400);
 
 		return;
