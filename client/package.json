@@ -11,7 +11,6 @@
 		"eslint-plugin-react": "^7.32.1",
 		"eslint-plugin-react-hooks": "^4.6.0",
 		"postcss": "^8.4.21",
-		"rimraf": "^4.1.2",
 		"tailwindcss": "^3.2.4",
 		"typescript": "^4.9.4",
 		"vite": "^4.0.4"
@@ -22,7 +21,7 @@
 		"react-dom": "^18.2.0"
 	},
 	"scripts": {
-		"build": "yarn clean && yarn typecheck && vite build",
+		"build": "yarn typecheck && vite build",
 		"build:w": "vite build -w",
 		"dev": "yarn build:w",
 		"typecheck": "tsc",
