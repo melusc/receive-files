@@ -1,8 +1,10 @@
 import {createReadStream} from 'node:fs';
 import {stat} from 'node:fs/promises';
 import {extname} from 'node:path';
+import {fileURLToPath} from 'node:url';
 
 import calculate from 'etag';
+import isPathInside from 'is-path-inside';
 import {type ParameterizedContext} from 'koa';
 
 const notFound = new Set(['ENOENT', 'ENAMETOOLONG', 'ENOTDIR']);
@@ -12,13 +14,11 @@ export async function sendStatic(
 	filename: string,
 	distDir: URL,
 ) {
-	if (!/^[\w-.]+\.\w+(?:\.map)?$/i.test(filename)) {
+	const path = new URL(filename.replace(/^\//, ''), distDir);
+	if (!isPathInside(fileURLToPath(path), fileURLToPath(distDir))) {
 		ctx.throw(400);
-
 		return;
 	}
-
-	const path = new URL(filename, distDir);
 
 	try {
 		const stats = await stat(path);

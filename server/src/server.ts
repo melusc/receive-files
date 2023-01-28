@@ -18,11 +18,11 @@ export class Server {
 
 		const router = new Router();
 		router.get('/', this.index);
-		router.get('/static/:filename', this.static);
-		router.post('/upload', koaBody({multipart: true}), this.upload);
-		router.all(/.+/, ctx => {
+		router.get('/index.html', ctx => {
 			ctx.redirect('/');
 		});
+		router.post('/upload', koaBody({multipart: true}), this.upload);
+		router.get(/.+/, this.static);
 
 		app.use(router.routes());
 
@@ -63,15 +63,6 @@ export class Server {
 	index: Router.Middleware = async ctx =>
 		sendStatic(ctx, 'index.html', staticDistDir);
 
-	static: Router.Middleware = async ctx => {
-		const {filename} = ctx.params;
-
-		if (!filename) {
-			ctx.throw(400);
-
-			return;
-		}
-
-		return sendStatic(ctx, filename, staticDistDir);
-	};
+	static: Router.Middleware = async ctx =>
+		sendStatic(ctx, ctx.path, staticDistDir);
 }

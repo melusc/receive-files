@@ -3832,6 +3832,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"is-path-inside@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "is-path-inside@npm:4.0.0"
+  checksum: 8810fa11c58e6360b82c3e0d6cd7d9c7d0392d3ac9eb10f980b81f9839f40ac6d1d6d6f05d069db0d227759801228f0b072e1b6c343e4469b065ab5fe0b68fe5
+  languageName: node
+  linkType: hard
+
 "is-plain-obj@npm:^1.1.0":
   version: 1.1.0
   resolution: "is-plain-obj@npm:1.1.0"
@@ -5682,6 +5689,7 @@ __metadata:
     concurrently: ^7.6.0
     etag: ^1.8.1
     inquirer: ^9.1.4
+    is-path-inside: ^4.0.0
     koa: ^2.14.1
     koa-body: ^6.0.1
     meow: ^11.0.0
