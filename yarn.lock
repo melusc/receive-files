@@ -3119,6 +3119,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"get-port@npm:^6.1.2":
+  version: 6.1.2
+  resolution: "get-port@npm:6.1.2"
+  checksum: e3c3d591492a11393455ef220f24c812a28f7da56ec3e4a2512d931a1f196d42850b50ac6138349a44622eda6dc3c0ccd8495cd91376d968e2d9e6f6f849e0a9
+  languageName: node
+  linkType: hard
+
 "get-set-props@npm:^0.1.0":
   version: 0.1.0
   resolution: "get-set-props@npm:0.1.0"
@@ -5688,6 +5695,7 @@ __metadata:
     "@types/koa__router": ^12.0.0
     concurrently: ^7.6.0
     etag: ^1.8.1
+    get-port: ^6.1.2
     inquirer: ^9.1.4
     is-path-inside: ^4.0.0
     koa: ^2.14.1

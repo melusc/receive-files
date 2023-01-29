@@ -2,6 +2,7 @@ import {opendir} from 'node:fs/promises';
 import {resolve} from 'node:path';
 import {cwd, exit} from 'node:process';
 
+import getPort from 'get-port';
 import meow from 'meow';
 
 import {Server} from './server.js';
@@ -45,5 +46,14 @@ try {
 	exit(1);
 }
 
+const port = await getPort({
+	port: new Set([flags.port, 4444]),
+});
+
+if (port !== flags.port) {
+	console.log('Using port %s because %s is in use', port, flags.port);
+	console.log();
+}
+
 // eslint-disable-next-line no-new
-new Server(flags.port, path, flags.confirm);
+new Server(port, path, flags.confirm);
