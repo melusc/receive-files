@@ -18,6 +18,13 @@
 				"beforeSelfClosing": "always"
 			}
 		],
-		"no-mixed-spaces-and-tabs": "off"
+		"no-mixed-spaces-and-tabs": "off",
+		"import/order": [
+			"error",
+			{
+				"newlines-between": "always",
+				"warnOnUnassignedImports": true
+			}
+		]
 	}
 }
