@@ -24,12 +24,12 @@ const {flags, input} = meow(
 		importMeta: import.meta,
 		flags: {
 			port: {
-				alias: 'p',
+				shortFlag: 'p',
 				type: 'number',
 				default: 4444,
 			},
 			confirm: {
-				alias: 'c',
+				shortFlag: 'c',
 				type: 'boolean',
 				default: true,
 			},
