@@ -5,7 +5,7 @@ import {cwd, exit} from 'node:process';
 import getPort from 'get-port';
 import meow from 'meow';
 
-import {Server} from './server.js';
+import {Server} from './server.ts';
 
 const {flags, input} = meow(
 	`

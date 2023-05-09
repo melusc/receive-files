@@ -2,9 +2,9 @@ import Router from '@koa/router';
 import Koa from 'koa';
 import {koaBody} from 'koa-body';
 
-import {saveFile} from './save-file.js';
-import {sendStatic} from './send-static.js';
-import {getNetworkAddress} from './util.js';
+import {saveFile} from './save-file.ts';
+import {sendStatic} from './send-static.ts';
+import {getNetworkAddress} from './util.ts';
 
 const staticDistDir = new URL('../../client/dist/', import.meta.url);
 

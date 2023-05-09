@@ -8,6 +8,13 @@
 				"newlines-between": "always",
 				"warnOnUnassignedImports": true
 			}
+		],
+		"n/file-extension-in-import": [
+			"error",
+			"always",
+			{
+				".ts": "always"
+			}
 		]
 	}
 }
