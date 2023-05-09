@@ -1,0 +1,8 @@
+{
+	"extends": "../tsconfig.json",
+	"compilerOptions": {
+		"moduleResolution": "nodenext",
+		"composite": true
+	},
+	"include": ["vite.config.ts"]
+}

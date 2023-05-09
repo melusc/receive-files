@@ -1,0 +1,82 @@
+$text: #ddd;
+$bg: #151a1e;
+$theme: #587ef8;
+
+html {
+	font-family: 'Open Sans', system-ui, sans-serif;
+	background: $bg;
+	color: $text;
+}
+
+html,
+body {
+	display: contents;
+}
+
+#app {
+	padding: 0 2em;
+	margin: none;
+}
+
+@media (min-width: 768px) {
+	#app {
+		width: 33.3%;
+	}
+}
+
+button {
+	font-family: inherit;
+}
+
+.btn-close {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+
+	svg {
+		width: 1em;
+		height: 1em;
+		fill: currentColor;
+	}
+}
+
+.file {
+	display: flex;
+	gap: 0.4em;
+	align-items: center;
+	justify-content: center;
+
+	border: 1px solid $text;
+	padding: 0.3em 0.7em;
+	border-radius: 0.5em;
+}
+
+.files-list {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	gap: 1em;
+
+	border: 1px solid $text;
+	padding: 1em 1em;
+	border-radius: 0.5em;
+}
+
+button {
+	color: inherit;
+	border: 2px solid $theme;
+	background: none;
+	font-size: inherit;
+	cursor: pointer;
+	border-radius: 0.3em;
+	padding: 0.3em 0.6em;
+}
+
+.btn-primary {
+	background: $theme;
+}
+
+.btn-upload {
+	margin-top: 2em;
+}

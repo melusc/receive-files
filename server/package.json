@@ -19,10 +19,12 @@
 		"@types/inquirer": "^9.0.3",
 		"@types/koa": "^2.13.6",
 		"@types/koa__router": "^12.0.0",
+		"@types/node": "^20.1.1",
 		"concurrently": "^8.0.1",
 		"rimraf": "^5.0.0",
 		"type-fest": "^3.10.0",
-		"typescript": "^5.0.4"
+		"typescript": "^5.0.4",
+		"xo": "^0.54.2"
 	},
 	"scripts": {
 		"build": "yarn clean && tsc",
@@ -30,6 +32,7 @@
 		"start:w": "node --watch dist/cli.js -c",
 		"start": "node dist/cli.js",
 		"dev": "concurrently yarn:build:w yarn:start:w",
-		"clean": "rimraf dist"
+		"clean": "rimraf dist",
+		"fmt": "xo --fix"
 	}
 }

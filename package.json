@@ -4,14 +4,11 @@
 	"private": true,
 	"devDependencies": {
 		"@lusc/tsconfig": "^2.2.0",
-		"@types/node": "^18.16.3",
 		"prettier": "^2.8.8",
-		"process": "^0.11.10",
-		"typescript": "^5.0.4",
-		"xo": "^0.54.2"
+		"prettier-plugin-svelte": "^2.10.0"
 	},
 	"scripts": {
-		"fmt": "prettier -w . && xo --fix",
+		"fmt": "prettier -w . && yarn workspaces foreach -piv run fmt",
 		"build": "yarn workspaces foreach -piv run build",
 		"start": "yarn workspace server start",
 		"dev": "yarn workspaces foreach -piv run dev",
@@ -21,5 +18,9 @@
 		"server",
 		"client"
 	],
-	"type": "module"
+	"type": "module",
+	"resolutions": {
+		"svelte@^3.59.1": "patch:svelte@npm%3A3.59.1#./.yarn/patches/svelte-npm-3.59.1-284b2b0695.patch",
+		"tsconfig-paths": "^4"
+	}
 }

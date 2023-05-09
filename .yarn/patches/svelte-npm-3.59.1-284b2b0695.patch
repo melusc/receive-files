@@ -1,0 +1,20 @@
+diff --git a/elements/index.d.ts b/elements/index.d.ts
+index e7ed8901aff49bec42b23d06be9a234751475031..0d5425e466daeeeea501b3d443a8168fcd33c0a8 100644
+--- a/elements/index.d.ts
++++ b/elements/index.d.ts
+@@ -761,6 +761,7 @@ export interface HTMLInputAttributes extends HTMLAttributes<HTMLInputElement> {
+ 	capture?: boolean | 'user' | 'environment' | undefined | null; // https://www.w3.org/TR/html-media-capture/#the-capture-attribute
+ 	checked?: boolean | undefined | null;
+ 	crossorigin?: string | undefined | null;
++	directory?: string | undefined | null;
+ 	disabled?: boolean | undefined | null;
+ 	form?: string | undefined | null;
+ 	formaction?: string | undefined | null;
+@@ -786,6 +787,7 @@ export interface HTMLInputAttributes extends HTMLAttributes<HTMLInputElement> {
+ 	type?: HTMLInputTypeAttribute | undefined | null;
+ 	value?: any;
+ 	width?: number | string | undefined | null;
++	webkitdirectory?: string | undefined | null;
+ 
+ 	'on:change'?: ChangeEventHandler<HTMLInputElement> | undefined | null;
+ 
