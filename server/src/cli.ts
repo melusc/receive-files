@@ -1,6 +1,6 @@
-import {opendir} from 'node:fs/promises';
+import {stat} from 'node:fs/promises';
 import {resolve} from 'node:path';
-import {cwd, exit} from 'node:process';
+import process, {cwd} from 'node:process';
 
 import getPort from 'get-port';
 import meow from 'meow';
@@ -39,22 +39,35 @@ const {flags, input} = meow(
 
 const path = resolve(input[0] ?? cwd());
 
-try {
-	const dir = await opendir(path);
-	await dir.close();
-} catch {
-	console.error('"%s" is not a directory', path);
-	exit(1);
+async function checkIsDirectory(path: string): Promise<boolean> {
+	try {
+		const stats = await stat(path);
+		return stats.isDirectory();
+	} catch (error: unknown) {
+		const nodeError = error as NodeJS.ErrnoException;
+
+		if (nodeError.code === 'ENOENT') {
+			return false;
+		}
+
+		throw error;
+	}
 }
 
-const port = await getPort({
-	port: new Set([flags.port, 4444]),
-});
+const isDirectory = await checkIsDirectory(path);
+if (isDirectory) {
+	const port = await getPort({
+		port: new Set([flags.port, 4444]),
+	});
 
-if (port !== flags.port) {
-	console.log('Using port %s because %s is in use', port, flags.port);
-	console.log();
+	if (port !== flags.port) {
+		console.log('Using port %s because %s is in use', port, flags.port);
+		console.log();
+	}
+
+	// eslint-disable-next-line no-new
+	new Server(port, path, flags.confirm);
+} else {
+	console.error('"%s" is not a directory or does not exist.', path);
+	process.exitCode = 1;
 }
-
-// eslint-disable-next-line no-new
-new Server(port, path, flags.confirm);
