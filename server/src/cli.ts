@@ -40,7 +40,8 @@ const {flags, input} = meow(
 const path = resolve(input[0] ?? cwd());
 
 try {
-	await opendir(path);
+	const dir = await opendir(path);
+	await dir.close();
 } catch {
 	console.error('"%s" is not a directory', path);
 	exit(1);
