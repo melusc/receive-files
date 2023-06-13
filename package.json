@@ -21,6 +21,6 @@
 	"type": "module",
 	"resolutions": {
 		"svelte@^3.59.1": "patch:svelte@npm%3A3.59.1#./.yarn/patches/svelte-npm-3.59.1-284b2b0695.patch",
-		"tsconfig-paths": "^4"
+		"tsconfig-paths": "^4.2.0"
 	}
 }
