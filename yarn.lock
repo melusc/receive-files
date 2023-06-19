@@ -1515,7 +1515,7 @@ __metadata:
     "@tsconfig/svelte": ^4.0.1
     "@typescript-eslint/parser": ^5.59.11
     eslint-config-xo-typescript: ^0.57.0
-    eslint-plugin-svelte: ^2.30.0
+    eslint-plugin-svelte: ^2.31.0
     sass: ^1.63.4
     svelte: ^3.59.1
     svelte-check: ^3.4.3
@@ -1697,6 +1697,15 @@ __metadata:
     shebang-command: ^2.0.0
     which: ^2.0.1
   checksum: 671cc7c7288c3a8406f3c69a3ae2fc85555c04169e9d611def9a675635472614f1c0ed0ef80955d5b6d4e724f6ced67f0ad1bb006c2ea643488fcfef994d7f52
+  languageName: node
+  linkType: hard
+
+"cssesc@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "cssesc@npm:3.0.0"
+  bin:
+    cssesc: bin/cssesc
+  checksum: f8c4ababffbc5e2ddf2fa9957dda1ee4af6048e22aeda1869d0d00843223c1b13ad3f5d88b51caa46c994225eacb636b764eb807a8883e2fb6f99b4f4e8c48b2
   languageName: node
   linkType: hard
 
@@ -2462,9 +2471,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-svelte@npm:^2.30.0":
-  version: 2.30.0
-  resolution: "eslint-plugin-svelte@npm:2.30.0"
+"eslint-plugin-svelte@npm:^2.31.0":
+  version: 2.31.0
+  resolution: "eslint-plugin-svelte@npm:2.31.0"
   dependencies:
     "@eslint-community/eslint-utils": ^4.2.0
     "@jridgewell/sourcemap-codec": ^1.4.14
@@ -2474,14 +2483,15 @@ __metadata:
     postcss: ^8.4.5
     postcss-load-config: ^3.1.4
     postcss-safe-parser: ^6.0.0
-    svelte-eslint-parser: ^0.30.0
+    postcss-selector-parser: ^6.0.11
+    svelte-eslint-parser: ^0.31.0
   peerDependencies:
     eslint: ^7.0.0 || ^8.0.0-0
     svelte: ^3.37.0 || ^4.0.0-0
   peerDependenciesMeta:
     svelte:
       optional: true
-  checksum: 90c76a7fadb0b9d3341474d5307e56d1f1fe56df5253219ed9d736ecff0bb61ffebe3a48f67b690d7fa937e5e797f9722dbe1ac9d2343e6b44b6814b800258c0
+  checksum: 32b82c975c21dfeec38e5ca204109ef2dcc31c754df1bfebc00a5181502fb42b0f2f038dc8fd8fb70282beae3baeb081f3c658cb96a331af1eab980df78fefbe
   languageName: node
   linkType: hard
 
@@ -5070,6 +5080,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"postcss-scss@npm:^4.0.6":
+  version: 4.0.6
+  resolution: "postcss-scss@npm:4.0.6"
+  peerDependencies:
+    postcss: ^8.4.19
+  checksum: 133a1cba31e2e167f4e841e66ec6a798eaf44c7911f9182ade0b5b1e71a8198814aa390b8c9d5db6b01358115232e5b15b1a4f8c5198acfccfb1f3fdbd328cdf
+  languageName: node
+  linkType: hard
+
+"postcss-selector-parser@npm:^6.0.11":
+  version: 6.0.13
+  resolution: "postcss-selector-parser@npm:6.0.13"
+  dependencies:
+    cssesc: ^3.0.0
+    util-deprecate: ^1.0.2
+  checksum: f89163338a1ce3b8ece8e9055cd5a3165e79a15e1c408e18de5ad8f87796b61ec2d48a2902d179ae0c4b5de10fccd3a325a4e660596549b040bc5ad1b465f096
+  languageName: node
+  linkType: hard
+
 "postcss@npm:^8.4.23, postcss@npm:^8.4.5":
   version: 8.4.24
   resolution: "postcss@npm:8.4.24"
@@ -5951,19 +5980,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte-eslint-parser@npm:^0.30.0":
-  version: 0.30.0
-  resolution: "svelte-eslint-parser@npm:0.30.0"
+"svelte-eslint-parser@npm:^0.31.0":
+  version: 0.31.0
+  resolution: "svelte-eslint-parser@npm:0.31.0"
   dependencies:
     eslint-scope: ^7.0.0
     eslint-visitor-keys: ^3.0.0
     espree: ^9.0.0
+    postcss: ^8.4.23
+    postcss-scss: ^4.0.6
   peerDependencies:
     svelte: ^3.37.0 || ^4.0.0-0
   peerDependenciesMeta:
     svelte:
       optional: true
-  checksum: d595c912e15910f5882db719db138ec5b86803e9fc800b363d263dddcf6e25962709aeda7981fa8d4fe4aa629302aacf1d70d1fd6e36141362aca6c1b10bbec8
+  checksum: e1350c76e7edab0954858dd0b13df7a7a163e35ec0d42618c78219c6cf8350a8d1be8d3471ff1f07b059155168220bef980109144ed31315fb196a81fb77adee
   languageName: node
   linkType: hard
 
@@ -6324,7 +6355,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"util-deprecate@npm:^1.0.1":
+"util-deprecate@npm:^1.0.1, util-deprecate@npm:^1.0.2":
   version: 1.0.2
   resolution: "util-deprecate@npm:1.0.2"
   checksum: 474acf1146cb2701fe3b074892217553dfcf9a031280919ba1b8d651a068c9b15d863b7303cb15bd00a862b498e6cf4ad7b4a08fb134edd5a6f7641681cb54a2
