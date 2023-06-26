@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type {FileKeyed} from '../types.d.ts';
-	import {uniqueKey} from '../util.ts';
+	import {makeDirectoryInput, uniqueKey} from '../util.ts';
 
 	import Files from './files.svelte';
 
@@ -89,12 +89,11 @@
 		bind:this={folderRef}
 		multiple
 		hidden
-		directory="directory"
 		name="folder"
 		type="file"
-		webkitdirectory="webkitdirectory"
 		disabled={uploading}
 		on:input|preventDefault={handleInput}
+		use:makeDirectoryInput
 	/>
 
 	<input

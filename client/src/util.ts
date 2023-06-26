@@ -23,3 +23,10 @@ let counter = 0;
 export function uniqueKey(): string {
 	return `${counter++}`;
 }
+
+// The types don't allow directory and webkitdirectory
+// I haven't figured out a way to suppress those errors
+export function makeDirectoryInput(node: HTMLInputElement) {
+	node.setAttribute('directory', 'directory');
+	node.setAttribute('webkitdirectory', 'webkitdirectory');
+}
