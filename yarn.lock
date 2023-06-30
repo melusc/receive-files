@@ -1630,7 +1630,7 @@ __metadata:
     "@tsconfig/svelte": ^5.0.0
     "@typescript-eslint/parser": ^5.60.0
     eslint-config-xo-typescript: ^0.57.0
-    eslint-plugin-svelte: ^2.32.0
+    eslint-plugin-svelte: ^2.32.2
     sass: ^1.63.6
     svelte: ^4.0.1
     svelte-check: ^3.4.4
@@ -2616,9 +2616,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-svelte@npm:^2.32.0":
-  version: 2.32.0
-  resolution: "eslint-plugin-svelte@npm:2.32.0"
+"eslint-plugin-svelte@npm:^2.32.2":
+  version: 2.32.2
+  resolution: "eslint-plugin-svelte@npm:2.32.2"
   dependencies:
     "@eslint-community/eslint-utils": ^4.2.0
     "@jridgewell/sourcemap-codec": ^1.4.14
@@ -2637,7 +2637,7 @@ __metadata:
   peerDependenciesMeta:
     svelte:
       optional: true
-  checksum: 73d4d5c094e0c8a64241e0dc565d720812cb7a484ee2af87d6f5d77967e2ac6034dbd7571d1a2a526eaaf7bc770d3e28b78b032847b17ee17b09ea182f29a595
+  checksum: 2602e9276f50f181a4df2f598152f2dae6a0f6924877f3ecc2e95aeeb55bbf119f688ea332013f10ee55f9ab8b7de4fc5bd28c4cfc49b789869f886c29f31e1e
   languageName: node
   linkType: hard
 
