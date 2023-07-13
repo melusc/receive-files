@@ -19,7 +19,7 @@
 		"@types/inquirer": "^9.0.3",
 		"@types/koa": "^2.13.6",
 		"@types/koa__router": "^12.0.0",
-		"@types/node": "^20.4.1",
+		"@types/node": "^20.4.2",
 		"concurrently": "^8.2.0",
 		"esbuild": "^0.18.11",
 		"rimraf": "^5.0.1",
