@@ -1639,7 +1639,7 @@ __metadata:
     "@sveltejs/vite-plugin-svelte": ^2.4.2
     "@tsconfig/svelte": ^5.0.0
     "@typescript-eslint/parser": ^6.0.0
-    eslint-config-xo-typescript: ^0.57.0
+    eslint-config-xo-typescript: ^1.0.0
     eslint-plugin-svelte: ^2.32.2
     sass: ^1.63.6
     svelte: ^4.0.5
@@ -2439,6 +2439,18 @@ __metadata:
     eslint: ">=8.0.0"
     typescript: ">=4.4"
   checksum: 6676c5820d0ab477a8395b37f1bad0d2bc9e086350f07b86e8074504e86fae402dde43358829d98eb019377f17575590379df827584fe4596ce435d2baab3ae7
+  languageName: node
+  linkType: hard
+
+"eslint-config-xo-typescript@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "eslint-config-xo-typescript@npm:1.0.0"
+  peerDependencies:
+    "@typescript-eslint/eslint-plugin": ">=6.0.0"
+    "@typescript-eslint/parser": ">=6.0.0"
+    eslint: ">=8.0.0"
+    typescript: ">=4.7"
+  checksum: ea33b33d3bdd6b8aa84ae32d78b3d09ba9ed23e209d111f8563dfd9ba35b5d42bc5ffe421b335d4323fa04f8dddd0fec6382a13850a9a50d1f46eb99755e47ac
   languageName: node
   linkType: hard
 
