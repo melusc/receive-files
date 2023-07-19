@@ -3,5 +3,6 @@
 	"bracketSpacing": false,
 	"jsxSingleQuote": true,
 	"singleQuote": true,
-	"useTabs": true
+	"useTabs": true,
+	"plugins": ["prettier-plugin-svelte"]
 }
