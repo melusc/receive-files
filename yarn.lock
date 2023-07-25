@@ -635,9 +635,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/koa@npm:*, @types/koa@npm:^2.13.5, @types/koa@npm:^2.13.6":
-  version: 2.13.6
-  resolution: "@types/koa@npm:2.13.6"
+"@types/koa@npm:*, @types/koa@npm:^2.13.5, @types/koa@npm:^2.13.7":
+  version: 2.13.7
+  resolution: "@types/koa@npm:2.13.7"
   dependencies:
     "@types/accepts": "*"
     "@types/content-disposition": "*"
@@ -647,7 +647,7 @@ __metadata:
     "@types/keygrip": "*"
     "@types/koa-compose": "*"
     "@types/node": "*"
-  checksum: a4061c2e29cd4ccb65a704fe3ef6868eac82558856c7c00a5bcc0f9fdf18c595e0156c52508eb8ba926a9108d9cf5c9a1a1b73cccf50e29b37ea1154323d0b26
+  checksum: 1fc188f2e872999508fb37544f0a31b7dc5d9b534db3833dcc074d398681d2a299af98f46594b21213d7c377fa4d0fd3d5eed84c768572b1adcbf4f3db2626bb
   languageName: node
   linkType: hard
 
@@ -5586,7 +5586,7 @@ __metadata:
     "@types/etag": ^1.8.1
     "@types/formidable": ^3.4.0
     "@types/inquirer": ^9.0.3
-    "@types/koa": ^2.13.6
+    "@types/koa": ^2.13.7
     "@types/koa__router": ^12.0.0
     "@types/node": ^20.4.4
     concurrently: ^8.2.0
