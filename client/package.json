@@ -14,7 +14,7 @@
 		"svelte-check": "^3.4.6",
 		"typescript": "^5.1.6",
 		"vite": "^4.4.9",
-		"xo": "^0.55.1"
+		"xo": "^0.56.0"
 	},
 	"scripts": {
 		"build": "yarn check && vite build",
