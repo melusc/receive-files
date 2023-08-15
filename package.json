@@ -4,7 +4,7 @@
 	"private": true,
 	"devDependencies": {
 		"@lusc/tsconfig": "^2.3.0",
-		"prettier": "^3.0.1",
+		"prettier": "^3.0.2",
 		"prettier-plugin-svelte": "^3.0.3"
 	},
 	"scripts": {
