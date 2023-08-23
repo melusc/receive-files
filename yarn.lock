@@ -617,10 +617,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tsconfig/svelte@npm:^5.0.1":
-  version: 5.0.1
-  resolution: "@tsconfig/svelte@npm:5.0.1"
-  checksum: c9fa08c895219c5dda2532de90eeb5d591561ec341eb70a7caf8e527a08029beb17330bc08b11fa1f73849b4f8e9bc65cfcac686ab90c808dd27b40f39370a95
+"@tsconfig/svelte@npm:^5.0.2":
+  version: 5.0.2
+  resolution: "@tsconfig/svelte@npm:5.0.2"
+  checksum: c16608913db89c8bfc2df805224f12403dd9d2f6f9480cc293e3aae8d1897f3a2de44db14d7c039f0325358e139fb071ec843ee46445a7e10d5265fe48f6ae80
   languageName: node
   linkType: hard
 
@@ -1619,7 +1619,7 @@ __metadata:
   resolution: "client@workspace:client"
   dependencies:
     "@sveltejs/vite-plugin-svelte": ^2.4.4
-    "@tsconfig/svelte": ^5.0.1
+    "@tsconfig/svelte": ^5.0.2
     "@typescript-eslint/parser": ^6.4.1
     eslint-config-xo-typescript: ^1.0.1
     eslint-plugin-svelte: ^2.33.0
