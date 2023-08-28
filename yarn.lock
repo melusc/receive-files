@@ -835,10 +835,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^20.5.6":
-  version: 20.5.6
-  resolution: "@types/node@npm:20.5.6"
-  checksum: d2ce44f1cfa3fd00fe7426f7cf9a46d680cd57802b874ed5618e7d9101a9c6b8de37f08c0e7185ee06fb363ad492549c3ea69665c7e8e31c7813210ed8e89005
+"@types/node@npm:*, @types/node@npm:^20.5.7":
+  version: 20.5.7
+  resolution: "@types/node@npm:20.5.7"
+  checksum: fc284c8e16ddc04569730d58e87eae349eb1c3dd9020cb79a1862d9d9add6f04e7367a236f3252db8db2572f90278e250f4cd43d27d264972b54394eaba1ed76
   languageName: node
   linkType: hard
 
@@ -4418,10 +4418,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"meow@npm:^12.0.1, meow@npm:^12.1.0":
-  version: 12.1.0
-  resolution: "meow@npm:12.1.0"
-  checksum: 5307980e049a2ec996ec69cc57e49c3cf29c65b4de337019e9ea55606d2e903cae0e8925180661eb3aa534fd0fd694e3017ca366f3ffb0f6df1ceedb829ac156
+"meow@npm:^12.0.1, meow@npm:^12.1.1":
+  version: 12.1.1
+  resolution: "meow@npm:12.1.1"
+  checksum: a6f3be85fbe53430ef53ab933dd790c39216eb4dbaabdbef593aa59efb40ecaa417897000175476bc33eed09e4cbce01df7ba53ba91e9a4bd84ec07024cb8914
   languageName: node
   linkType: hard
 
@@ -5633,7 +5633,7 @@ __metadata:
     "@types/inquirer": ^9.0.3
     "@types/koa": ^2.13.8
     "@types/koa__router": ^12.0.0
-    "@types/node": ^20.5.6
+    "@types/node": ^20.5.7
     concurrently: ^8.2.1
     esbuild: ^0.19.2
     etag: ^1.8.1
@@ -5642,9 +5642,9 @@ __metadata:
     is-path-inside: ^4.0.0
     koa: ^2.14.2
     koa-body: ^6.0.1
-    meow: ^12.1.0
+    meow: ^12.1.1
     rimraf: ^5.0.1
-    type-fest: ^4.2.0
+    type-fest: ^4.3.1
     typescript: ^5.2.2
     xo: ^0.56.0
   languageName: unknown
@@ -6290,10 +6290,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"type-fest@npm:^4.2.0":
-  version: 4.2.0
-  resolution: "type-fest@npm:4.2.0"
-  checksum: 76c5dfde9293b1b185b266a07df669f68d58ae3e19c06e33f0ff0dd0ba68628f05389bc26bcee8476e29a79ab7da054653670b9778399ceb079c4c259bac29f0
+"type-fest@npm:^4.3.1":
+  version: 4.3.1
+  resolution: "type-fest@npm:4.3.1"
+  checksum: 04e0f073dcc31c113c1b8856c089b388e7e9f4383a9ed72cc1466a89ec50d9d67678844eeec342b5a1ce71b21e817764d4f067aa148f6bcb5df9005ff3803382
   languageName: node
   linkType: hard
 
