@@ -740,12 +740,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/formidable@npm:^3.4.1":
-  version: 3.4.1
-  resolution: "@types/formidable@npm:3.4.1"
+"@types/formidable@npm:^3.4.2":
+  version: 3.4.2
+  resolution: "@types/formidable@npm:3.4.2"
   dependencies:
     "@types/node": "*"
-  checksum: 81486aa94ac7b6ea426ac8cfc8551661179f2fab71b68ede3f816d5507cbe40e9e2ff27dd58f77fe429e3dcda58cd3b5cfa972a931657d33f559c19989e2bedf
+  checksum: 1ecb7876969bf4f515fe8169b5f312aba7ad4a92d1e233167031d12c0482aacc5c91fa96fb56b22a55eb2f28e2b69e878115ece3ebd3d60fefa7a0664cfce3ed
   languageName: node
   linkType: hard
 
@@ -1625,7 +1625,7 @@ __metadata:
     eslint-plugin-svelte: ^2.33.0
     sass: ^1.66.1
     svelte: ^4.2.0
-    svelte-check: ^3.5.0
+    svelte-check: ^3.5.1
     typescript: ^5.2.2
     vite: ^4.4.9
     xo: ^0.56.0
@@ -2956,7 +2956,7 @@ __metadata:
   resolution: "file-receiver@workspace:."
   dependencies:
     "@lusc/tsconfig": ^3.0.0
-    prettier: ^3.0.2
+    prettier: ^3.0.3
     prettier-plugin-svelte: ^3.0.3
   languageName: unknown
   linkType: soft
@@ -5234,12 +5234,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^3.0.0, prettier@npm:^3.0.2":
-  version: 3.0.2
-  resolution: "prettier@npm:3.0.2"
+"prettier@npm:^3.0.0, prettier@npm:^3.0.3":
+  version: 3.0.3
+  resolution: "prettier@npm:3.0.3"
   bin:
     prettier: bin/prettier.cjs
-  checksum: 118b59ddb6c80abe2315ab6d0f4dd1b253be5cfdb20622fa5b65bb1573dcd362e6dd3dcf2711dd3ebfe64aecf7bdc75de8a69dc2422dcd35bdde7610586b677a
+  checksum: e10b9af02b281f6c617362ebd2571b1d7fc9fb8a3bd17e371754428cda992e5e8d8b7a046e8f7d3e2da1dcd21aa001e2e3c797402ebb6111b5cd19609dd228e0
   languageName: node
   linkType: hard
 
@@ -5629,7 +5629,7 @@ __metadata:
   dependencies:
     "@koa/router": ^12.0.0
     "@types/etag": ^1.8.1
-    "@types/formidable": ^3.4.1
+    "@types/formidable": ^3.4.2
     "@types/inquirer": ^9.0.3
     "@types/koa": ^2.13.8
     "@types/koa__router": ^12.0.0
@@ -6009,9 +6009,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte-check@npm:^3.5.0":
-  version: 3.5.0
-  resolution: "svelte-check@npm:3.5.0"
+"svelte-check@npm:^3.5.1":
+  version: 3.5.1
+  resolution: "svelte-check@npm:3.5.1"
   dependencies:
     "@jridgewell/trace-mapping": ^0.3.17
     chokidar: ^3.4.1
@@ -6025,7 +6025,7 @@ __metadata:
     svelte: ^3.55.0 || ^4.0.0-next.0 || ^4.0.0
   bin:
     svelte-check: bin/svelte-check
-  checksum: c62da075d1ca3bcccb6953ca6636e2035e2af29afc8699a6de832982cd446c1c237856cebcb12ce6a7255a10af5d544972c9fb6b57649a6cfbd758ceab3dd622
+  checksum: 96b886299e2d562edc1a9e98541702bbd9e1886568f166c7de3e267e3feca8acfa9b6548601b1c42fffe0ee3ec5c0cf7271e02cba094ab0c556f12ff47ba093e
   languageName: node
   linkType: hard
 
