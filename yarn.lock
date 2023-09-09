@@ -835,10 +835,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^20.5.9":
-  version: 20.5.9
-  resolution: "@types/node@npm:20.5.9"
-  checksum: 717490e94131722144878b4ca1a963ede1673bb8f2ef78c2f5b50b918df6dc9b35e7f8283e5c2a7a9f137730f7c08dc6228e53d4494a94c9ee16881e6ce6caed
+"@types/node@npm:*, @types/node@npm:^20.6.0":
+  version: 20.6.0
+  resolution: "@types/node@npm:20.6.0"
+  checksum: 52611801af5cf151c6fac1963aa4a8a8ca2e388a9e9ed82b01b70bca762088ded5b32cc789c5564220d5d7dccba2b8dd34446a3d4fc74736805e1f2cf262e29d
   languageName: node
   linkType: hard
 
@@ -1622,7 +1622,7 @@ __metadata:
     "@tsconfig/svelte": ^5.0.2
     "@typescript-eslint/parser": ^6.6.0
     eslint-config-xo-typescript: ^1.0.1
-    eslint-plugin-svelte: ^2.33.0
+    eslint-plugin-svelte: ^2.33.1
     sass: ^1.66.1
     svelte: ^4.2.0
     svelte-check: ^3.5.1
@@ -2598,9 +2598,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-svelte@npm:^2.33.0":
-  version: 2.33.0
-  resolution: "eslint-plugin-svelte@npm:2.33.0"
+"eslint-plugin-svelte@npm:^2.33.1":
+  version: 2.33.1
+  resolution: "eslint-plugin-svelte@npm:2.33.1"
   dependencies:
     "@eslint-community/eslint-utils": ^4.2.0
     "@jridgewell/sourcemap-codec": ^1.4.14
@@ -2619,7 +2619,7 @@ __metadata:
   peerDependenciesMeta:
     svelte:
       optional: true
-  checksum: 8bbd184bd4576ea46298f1769f76ecd88f604ee97412fbb28d72130d5ae61a1e8632a3b0c6801614d5fde3d65e648ed8e80744229c7f464cc0a0134d4995179d
+  checksum: 5b45b1a12eba7753f985111148dd244410f4161c8241d79bace484502a9cc2ee9ccb8b11f4358f5a0ee33816da6796b4f55a7a45a34ba080b0dffcceb0a0a858
   languageName: node
   linkType: hard
 
@@ -3617,9 +3617,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"inquirer@npm:^9.2.10":
-  version: 9.2.10
-  resolution: "inquirer@npm:9.2.10"
+"inquirer@npm:^9.2.11":
+  version: 9.2.11
+  resolution: "inquirer@npm:9.2.11"
   dependencies:
     "@ljharb/through": ^2.3.9
     ansi-escapes: ^4.3.2
@@ -3636,7 +3636,7 @@ __metadata:
     string-width: ^4.2.3
     strip-ansi: ^6.0.1
     wrap-ansi: ^6.2.0
-  checksum: 7ea6b3aff7a77d2b885f2dccf81736d46b15e1c8ead458b1725d468755e1be9b8c4bc2a8e9c9a4aa52a11b41c6b785696216915ee7090c94ee135e35973be19c
+  checksum: af59b422eb6005dac90f6c5e8295013d0611ac5471ff4fbf4ad3e228136e0f41db73af2d5a68e36770f9e31ac203ae1589d35c3e970acbc6110bb5df905928f9
   languageName: node
   linkType: hard
 
@@ -5633,12 +5633,12 @@ __metadata:
     "@types/inquirer": ^9.0.3
     "@types/koa": ^2.13.8
     "@types/koa__router": ^12.0.0
-    "@types/node": ^20.5.9
+    "@types/node": ^20.6.0
     concurrently: ^8.2.1
     esbuild: ^0.19.2
     etag: ^1.8.1
     get-port: ^7.0.0
-    inquirer: ^9.2.10
+    inquirer: ^9.2.11
     is-path-inside: ^4.0.0
     koa: ^2.14.2
     koa-body: ^6.0.1
