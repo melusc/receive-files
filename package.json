@@ -3,7 +3,7 @@
 	"packageManager": "yarn@3.6.3",
 	"private": true,
 	"devDependencies": {
-		"@lusc/tsconfig": "^3.0.0",
+		"@lusc/tsconfig": "^4.0.0",
 		"prettier": "^3.0.3",
 		"prettier-plugin-svelte": "^3.0.3"
 	},
