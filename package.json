@@ -1,6 +1,6 @@
 {
 	"name": "file-receiver",
-	"packageManager": "yarn@3.6.3",
+	"packageManager": "yarn@3.6.4",
 	"private": true,
 	"devDependencies": {
 		"@lusc/tsconfig": "^4.0.0",
