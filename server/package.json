@@ -14,8 +14,8 @@
 		"meow": "^12.1.1"
 	},
 	"devDependencies": {
-		"@types/etag": "^1.8.1",
-		"@types/formidable": "^3.4.3",
+		"@types/etag": "^1.8.2",
+		"@types/formidable": "^3.4.4",
 		"@types/inquirer": "^9.0.4",
 		"@types/koa": "^2.13.9",
 		"@types/koa__router": "^12.0.1",
