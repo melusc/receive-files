@@ -763,13 +763,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/inquirer@npm:^9.0.4":
-  version: 9.0.4
-  resolution: "@types/inquirer@npm:9.0.4"
+"@types/inquirer@npm:^9.0.6":
+  version: 9.0.6
+  resolution: "@types/inquirer@npm:9.0.6"
   dependencies:
     "@types/through": "*"
     rxjs: ^7.2.0
-  checksum: 94d3c75cdd892dbfb5996f53298fcee80e590077d2589ae08eae33252f47462503483b1002710c96a4e2d10661f74bf40aed5d87718a6b020828ec8749192593
+  checksum: d4d55e986544ab2b336b1670b8e1395b86629081d2803d5247e3b1cf5643b7c67d6b15903da0a964087c6156c8457c8ae3245219eb991c4a8d8a03ce3e1cfee3
   languageName: node
   linkType: hard
 
@@ -796,9 +796,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/koa@npm:*, @types/koa@npm:^2.13.5, @types/koa@npm:^2.13.9":
-  version: 2.13.9
-  resolution: "@types/koa@npm:2.13.9"
+"@types/koa@npm:*, @types/koa@npm:^2.13.10, @types/koa@npm:^2.13.5":
+  version: 2.13.10
+  resolution: "@types/koa@npm:2.13.10"
   dependencies:
     "@types/accepts": "*"
     "@types/content-disposition": "*"
@@ -808,16 +808,16 @@ __metadata:
     "@types/keygrip": "*"
     "@types/koa-compose": "*"
     "@types/node": "*"
-  checksum: af9cd599c8e17e2ae0f4168a61d964e343f713d002b65fd995658d7addc6551ccadecfd32b3405cf44e4d360178ee4f972d6881533548261ae1f636a655d24b1
+  checksum: dd3b3cbe1bb2fc0b5edd44672a64816abdc7bc0281d2913389ef7926681dd602a53842e29d59853926cf2c74ffa1fc0ebc44e83be9c172c5cead417866b3ecac
   languageName: node
   linkType: hard
 
-"@types/koa__router@npm:^12.0.1":
-  version: 12.0.1
-  resolution: "@types/koa__router@npm:12.0.1"
+"@types/koa__router@npm:^12.0.2":
+  version: 12.0.2
+  resolution: "@types/koa__router@npm:12.0.2"
   dependencies:
     "@types/koa": "*"
-  checksum: 91da726e1f3bb848fc8b0bb3ce257aabe4ad175574b3a11bc38b16aacec93f86ec451a70f60f3e53f13df795ace17f7cb4d47ccb63720270a931c776b0b2db33
+  checksum: 872d31f358d2187fe3d874f9b185d508db9beea8ca2eddb354c9850450ea5ee76b9db7d7051c833df24508f39857d17f0c1dd0dce6d59abeb583c867d3991305
   languageName: node
   linkType: hard
 
@@ -835,12 +835,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^20.8.6":
-  version: 20.8.6
-  resolution: "@types/node@npm:20.8.6"
+"@types/node@npm:*, @types/node@npm:^20.8.7":
+  version: 20.8.7
+  resolution: "@types/node@npm:20.8.7"
   dependencies:
     undici-types: ~5.25.1
-  checksum: ccfb7ac482c5a96edeb239893c5c099f5257fcc2ed9ae62fefdfbc782b79e16dbc2af9a85b379665237bf759904b44ca2be68e75d239e0297882aad42f61905c
+  checksum: 2173c0c03daefcb60c03a61b1371b28c8fe412e7a40dc6646458b809d14a85fbc7aeb369d957d57f0aaaafd99964e77436f29b3b579232d8f2b20c58abbd1d25
   languageName: node
   linkType: hard
 
@@ -1626,10 +1626,10 @@ __metadata:
     eslint-config-xo-typescript: ^1.0.1
     eslint-plugin-svelte: ^2.34.0
     sass: ^1.69.4
-    svelte: ^4.2.1
+    svelte: ^4.2.2
     svelte-check: ^3.5.2
     typescript: ^5.2.2
-    vite: ^4.4.11
+    vite: ^4.5.0
     xo: ^0.56.0
   languageName: unknown
   linkType: soft
@@ -1739,9 +1739,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"concurrently@npm:^8.2.1":
-  version: 8.2.1
-  resolution: "concurrently@npm:8.2.1"
+"concurrently@npm:^8.2.2":
+  version: 8.2.2
+  resolution: "concurrently@npm:8.2.2"
   dependencies:
     chalk: ^4.1.2
     date-fns: ^2.30.0
@@ -1755,7 +1755,7 @@ __metadata:
   bin:
     conc: dist/bin/concurrently.js
     concurrently: dist/bin/concurrently.js
-  checksum: 216cb16d5b301cbd9c657b19430836d1686fe8fa9b9ef35ef7ac601e1a5cf6535166a3e57de446696dbd5e7e3f45d78fc70f33c5fd4bb565342cd5e752c5b069
+  checksum: 8ac774df06869773438f1bf91025180c52d5b53139bc86cf47659136c0d97461d0579c515d848d1e945d4e3e0cafe646b2ea18af8d74259b46abddcfe39b2c6c
   languageName: node
   linkType: hard
 
@@ -4367,12 +4367,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"magic-string@npm:^0.30.0, magic-string@npm:^0.30.3":
-  version: 0.30.3
-  resolution: "magic-string@npm:0.30.3"
+"magic-string@npm:^0.30.3, magic-string@npm:^0.30.4":
+  version: 0.30.5
+  resolution: "magic-string@npm:0.30.5"
   dependencies:
     "@jridgewell/sourcemap-codec": ^1.4.15
-  checksum: a5a9ddf9bd3bf49a2de1048bf358464f1bda7b3cc1311550f4a0ba8f81a4070e25445d53a5ee28850161336f1bff3cf28aa3320c6b4aeff45ce3e689f300b2f3
+  checksum: da10fecff0c0a7d3faf756913ce62bd6d5e7b0402be48c3b27bfd651b90e29677e279069a63b764bcdc1b8ecdcdb898f29a5c5ec510f2323e8d62ee057a6eb18
   languageName: node
   linkType: hard
 
@@ -5632,11 +5632,11 @@ __metadata:
     "@koa/router": ^12.0.0
     "@types/etag": ^1.8.2
     "@types/formidable": ^3.4.4
-    "@types/inquirer": ^9.0.4
-    "@types/koa": ^2.13.9
-    "@types/koa__router": ^12.0.1
-    "@types/node": ^20.8.6
-    concurrently: ^8.2.1
+    "@types/inquirer": ^9.0.6
+    "@types/koa": ^2.13.10
+    "@types/koa__router": ^12.0.2
+    "@types/node": ^20.8.7
+    concurrently: ^8.2.2
     esbuild: ^0.19.5
     etag: ^1.8.1
     get-port: ^7.0.0
@@ -5646,7 +5646,7 @@ __metadata:
     koa-body: ^6.0.1
     meow: ^12.1.1
     rimraf: ^5.0.5
-    type-fest: ^4.4.0
+    type-fest: ^4.5.0
     typescript: ^5.2.2
     xo: ^0.56.0
   languageName: unknown
@@ -6104,9 +6104,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte@npm:^4.2.1":
-  version: 4.2.1
-  resolution: "svelte@npm:4.2.1"
+"svelte@npm:^4.2.2":
+  version: 4.2.2
+  resolution: "svelte@npm:4.2.2"
   dependencies:
     "@ampproject/remapping": ^2.2.1
     "@jridgewell/sourcemap-codec": ^1.4.15
@@ -6119,9 +6119,9 @@ __metadata:
     estree-walker: ^3.0.3
     is-reference: ^3.0.1
     locate-character: ^3.0.0
-    magic-string: ^0.30.0
+    magic-string: ^0.30.4
     periscopic: ^3.1.0
-  checksum: 62d53ad48b8879c6327abafd4ad481b9f0efe5f560be93cf9744adf5d2186d30d9ebf693eb549f51d2f6e70de4d57c02e024d9bd1346beba9796c73b066c3d88
+  checksum: deb7c280331420ad1e835b96137a196599a30aac58b0b1542ab7cbf3de20d17249d50eaf9696934413dd4505ad1903c3c67e7e11c783b1aacf74809218e3d4eb
   languageName: node
   linkType: hard
 
@@ -6292,10 +6292,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"type-fest@npm:^4.4.0":
-  version: 4.4.0
-  resolution: "type-fest@npm:4.4.0"
-  checksum: 0b8ae68c3a87e76ad41a317604b8864ee59dbaad095957ebeea8e95d22d8a269ad6d55fe28e16d645a05a8bdfc633e7f706019d6616a8194ae54cbabb36dec2b
+"type-fest@npm:^4.5.0":
+  version: 4.5.0
+  resolution: "type-fest@npm:4.5.0"
+  checksum: cddc3900f19671e16ec49080e5c06c197d5554a75a1b758ff6d07af1089925ade4bcc9d1af080bd4a4a4fdf973a90ad4a83229203c854a444c511f8a3daeb56d
   languageName: node
   linkType: hard
 
@@ -6438,9 +6438,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^4.4.11":
-  version: 4.4.11
-  resolution: "vite@npm:4.4.11"
+"vite@npm:^4.5.0":
+  version: 4.5.0
+  resolution: "vite@npm:4.5.0"
   dependencies:
     esbuild: ^0.18.10
     fsevents: ~2.3.2
@@ -6474,7 +6474,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: c22145c8385343a629cd546054b9da6eee60327540102bdfd1ad897fd2e78e0763ce6a18a9d84fdefde9da8fd2427d3bec9eb2697b47cf4068c7b4b52f7e3e6a
+  checksum: 06f1a4c858e4dc4c04a10466f4ccacea30c5a9f8574e5ba3deb9d03fa20e80ca6797f02dad97a988da7cdef96238dbc69c3b6a538156585c74722d996223619e
   languageName: node
   linkType: hard
 
