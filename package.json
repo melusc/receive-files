@@ -8,11 +8,11 @@
 		"prettier-plugin-svelte": "^3.0.3"
 	},
 	"scripts": {
-		"fmt": "prettier -w . **/*.svelte && yarn workspaces foreach -piv run fmt",
-		"build": "yarn workspaces foreach -piv run build",
+		"fmt": "prettier -w . **/*.svelte && yarn workspaces foreach -Apiv run fmt",
+		"build": "yarn workspaces foreach -Apiv run build",
 		"start": "yarn workspace server start",
-		"dev": "yarn workspaces foreach -piv run dev",
-		"clean": "yarn workspaces foreach -piv run clean"
+		"dev": "yarn workspaces foreach -Apiv run dev",
+		"clean": "yarn workspaces foreach -Apiv run clean"
 	},
 	"workspaces": [
 		"server",
