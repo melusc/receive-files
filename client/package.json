@@ -1,7 +1,7 @@
 {
 	"name": "client",
 	"private": true,
-	"packageManager": "yarn@4.0.0",
+	"packageManager": "yarn@4.0.1",
 	"type": "module",
 	"devDependencies": {
 		"@sveltejs/vite-plugin-svelte": "^2.4.6",
