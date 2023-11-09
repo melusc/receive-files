@@ -503,7 +503,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ljharb/through@npm:^2.3.9":
+"@ljharb/through@npm:^2.3.11":
   version: 2.3.11
   resolution: "@ljharb/through@npm:2.3.11"
   dependencies:
@@ -737,12 +737,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/formidable@npm:^3.4.4":
-  version: 3.4.4
-  resolution: "@types/formidable@npm:3.4.4"
+"@types/formidable@npm:^3.4.5":
+  version: 3.4.5
+  resolution: "@types/formidable@npm:3.4.5"
   dependencies:
     "@types/node": "npm:*"
-  checksum: 13686fcdf46e17c2616f9dec52dafa455d777a5935efa9bcb6df04840076a25ca8d012071f2c33653fca125bd82a66532255a43f44cd9a89278242a4c03d19bb
+  checksum: 733dc59d4d12152ba5fb70751184812345ff08691864dd9b1b7626b9d40045a306021b9721495cafb56cd375da54fecaaebdada98fc390b7406ebb81efe0bfbe
   languageName: node
   linkType: hard
 
@@ -760,13 +760,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/inquirer@npm:^9.0.6":
-  version: 9.0.6
-  resolution: "@types/inquirer@npm:9.0.6"
+"@types/inquirer@npm:^9.0.7":
+  version: 9.0.7
+  resolution: "@types/inquirer@npm:9.0.7"
   dependencies:
     "@types/through": "npm:*"
     rxjs: "npm:^7.2.0"
-  checksum: b19237abf78e01cc326cadc24feb161a51d582ea5977d8d2bb20ccfa9fc4ac00fd724202fcbb9b74c7d1425a4a33ec8cb616257edad4f660433f310d9bcbc7d4
+  checksum: b7138af41226c0457b99ff9b179da4a82078bc1674762e812d3cc3e3276936d7326b9fa6b98212b8eb055b2b6aaebe3c20359eebe176a6ca71061f4e08ce3a0f
   languageName: node
   linkType: hard
 
@@ -793,9 +793,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/koa@npm:*, @types/koa@npm:^2.13.10, @types/koa@npm:^2.13.5":
-  version: 2.13.10
-  resolution: "@types/koa@npm:2.13.10"
+"@types/koa@npm:*, @types/koa@npm:^2.13.11, @types/koa@npm:^2.13.5":
+  version: 2.13.11
+  resolution: "@types/koa@npm:2.13.11"
   dependencies:
     "@types/accepts": "npm:*"
     "@types/content-disposition": "npm:*"
@@ -805,16 +805,16 @@ __metadata:
     "@types/keygrip": "npm:*"
     "@types/koa-compose": "npm:*"
     "@types/node": "npm:*"
-  checksum: fc13a614093f2b48a32dea3af8c932d77edb9e571d18faabb6ce8f814222351caead1d2c8e835146d0b9e780e8ac675f9f5a56c03d3b1ad7ea85735174e5f947
+  checksum: f1df820dc5f12cb116a75314e032b5cf655017af8a5f927f4941c0d1a9c3e7d0799fdcac7eb04108e0546276a775336f5878ab65ef3686dd8931515d8f1480b7
   languageName: node
   linkType: hard
 
-"@types/koa__router@npm:^12.0.3":
-  version: 12.0.3
-  resolution: "@types/koa__router@npm:12.0.3"
+"@types/koa__router@npm:^12.0.4":
+  version: 12.0.4
+  resolution: "@types/koa__router@npm:12.0.4"
   dependencies:
     "@types/koa": "npm:*"
-  checksum: f9e2c360bed2f326df2d2cb3d1dd508a14360ae2299516579bed9690084f92056df09f28946d3245e9ef67ee0688af4a27990036f0e9afc9eb31241852884612
+  checksum: bc783b47d3c2a6bb8171ba3ddffa5781c5ed11e6b716e74281dfb71229ceb3189ddf5ac178e6f9552ca9d43e8370e0bd558054d66439b43a9e500d046a15ffa8
   languageName: node
   linkType: hard
 
@@ -832,12 +832,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^20.8.10":
-  version: 20.8.10
-  resolution: "@types/node@npm:20.8.10"
+"@types/node@npm:*, @types/node@npm:^20.9.0":
+  version: 20.9.0
+  resolution: "@types/node@npm:20.9.0"
   dependencies:
     undici-types: "npm:~5.26.4"
-  checksum: caaa3ae9294f1bfdacb029a916c64af63cbcea613a52f53ea86f93c91779859af177b2b68113ef835194519f5e76cadda08559929b68297f1a8a568c207f9f66
+  checksum: 755d07de735eafda4e20af75ad9d03bdbfddef327d790e9a896142eac7493db5d8501591376e1c8227aa12eeb88e522bc727c6024504842ed40e539e8a466db9
   languageName: node
   linkType: hard
 
@@ -3658,11 +3658,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"inquirer@npm:^9.2.11":
-  version: 9.2.11
-  resolution: "inquirer@npm:9.2.11"
+"inquirer@npm:^9.2.12":
+  version: 9.2.12
+  resolution: "inquirer@npm:9.2.12"
   dependencies:
-    "@ljharb/through": "npm:^2.3.9"
+    "@ljharb/through": "npm:^2.3.11"
     ansi-escapes: "npm:^4.3.2"
     chalk: "npm:^5.3.0"
     cli-cursor: "npm:^3.1.0"
@@ -3677,7 +3677,7 @@ __metadata:
     string-width: "npm:^4.2.3"
     strip-ansi: "npm:^6.0.1"
     wrap-ansi: "npm:^6.2.0"
-  checksum: 4bc2db9a3c04432ba6f10b236b1975c5e112d42c2364ffa62e1b5bca5d3d358e7bee0c4d2b5b50294d05a8b452b66cf274b25b5d3c4a71df6c90c372102dee8a
+  checksum: efc19864bea5f4b22a47e686aa88684ee42352db4e96dd6307da7140496c16e5ef0e74be664fba490b068714dc24d72f66dc1907a1ccbaf9d58d6156cbdc5908
   languageName: node
   linkType: hard
 
@@ -5720,22 +5720,22 @@ __metadata:
   dependencies:
     "@koa/router": "npm:^12.0.0"
     "@types/etag": "npm:^1.8.3"
-    "@types/formidable": "npm:^3.4.4"
-    "@types/inquirer": "npm:^9.0.6"
-    "@types/koa": "npm:^2.13.10"
-    "@types/koa__router": "npm:^12.0.3"
-    "@types/node": "npm:^20.8.10"
+    "@types/formidable": "npm:^3.4.5"
+    "@types/inquirer": "npm:^9.0.7"
+    "@types/koa": "npm:^2.13.11"
+    "@types/koa__router": "npm:^12.0.4"
+    "@types/node": "npm:^20.9.0"
     concurrently: "npm:^8.2.2"
     esbuild: "npm:^0.19.5"
     etag: "npm:^1.8.1"
     get-port: "npm:^7.0.0"
-    inquirer: "npm:^9.2.11"
+    inquirer: "npm:^9.2.12"
     is-path-inside: "npm:^4.0.0"
     koa: "npm:^2.14.2"
     koa-body: "npm:^6.0.1"
     meow: "npm:^12.1.1"
     rimraf: "npm:^5.0.5"
-    type-fest: "npm:^4.6.0"
+    type-fest: "npm:^4.7.1"
     typescript: "npm:^5.2.2"
     xo: "npm:^0.56.0"
   languageName: unknown
@@ -6404,10 +6404,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"type-fest@npm:^4.6.0":
-  version: 4.6.0
-  resolution: "type-fest@npm:4.6.0"
-  checksum: 6f34c3cdb95948821fdfc5a70481791de99b2ba840fad87ac3fbdf77941e556eaeaa03c2ed136b366436560702004af7687d59b03d4f181c28289db1af903179
+"type-fest@npm:^4.7.1":
+  version: 4.7.1
+  resolution: "type-fest@npm:4.7.1"
+  checksum: e2cae05a6a5be98e5e5cfecee8782db1eb74594ceb1d85b5bfdb9b9ca5e236342f97435d3ff9edddd8eb92898af7f13555f85d1a53a69c362b0f56f2cceb8151
   languageName: node
   linkType: hard
 
