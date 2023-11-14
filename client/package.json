@@ -1,12 +1,12 @@
 {
 	"name": "client",
 	"private": true,
-	"packageManager": "yarn@4.0.1",
+	"packageManager": "yarn@4.0.2",
 	"type": "module",
 	"devDependencies": {
-		"@sveltejs/vite-plugin-svelte": "^2.5.1",
+		"@sveltejs/vite-plugin-svelte": "^2.5.2",
 		"@tsconfig/svelte": "^5.0.2",
-		"@typescript-eslint/parser": "^6.10.0",
+		"@typescript-eslint/parser": "^6.11.0",
 		"eslint-config-xo-typescript": "^1.0.1",
 		"eslint-plugin-svelte": "^2.35.0",
 		"sass": "^1.69.5",
