@@ -490,7 +490,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@koa/router@npm:^12.0.0":
+"@koa/router@npm:^12.0.1":
   version: 12.0.1
   resolution: "@koa/router@npm:12.0.1"
   dependencies:
@@ -5718,7 +5718,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "server@workspace:server"
   dependencies:
-    "@koa/router": "npm:^12.0.0"
+    "@koa/router": "npm:^12.0.1"
     "@types/etag": "npm:^1.8.3"
     "@types/formidable": "npm:^3.4.5"
     "@types/inquirer": "npm:^9.0.7"
