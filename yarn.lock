@@ -762,12 +762,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^20.9.4":
-  version: 20.9.4
-  resolution: "@types/node@npm:20.9.4"
+"@types/node@npm:*, @types/node@npm:^20.10.0":
+  version: 20.10.0
+  resolution: "@types/node@npm:20.10.0"
   dependencies:
     undici-types: "npm:~5.26.4"
-  checksum: c8b48ace4c7e17715fa901201c98275f8e5268cf5895a8d149777eb0ec6c3ef6c831ff3917e92da5453a5dbe13f230caa50b348a0601b0d50eb9e628010c0364
+  checksum: f379e57d9d28cb5f3d8eab943de0c54a0ca2f95ee356e1fe2a1a4fa718b740103ae522c50ce107cffd52c3642ef3244cfc55bf5369081dd6c48369c8587b21ae
   languageName: node
   linkType: hard
 
@@ -1578,7 +1578,7 @@ __metadata:
     eslint-plugin-svelte: "npm:^2.35.1"
     sass: "npm:^1.69.5"
     svelte: "npm:^4.2.7"
-    svelte-check: "npm:^3.6.1"
+    svelte-check: "npm:^3.6.2"
     typescript: "npm:^5.3.2"
     vite: "npm:^5.0.2"
     xo: "npm:^0.56.0"
@@ -2850,7 +2850,7 @@ __metadata:
   dependencies:
     "@lusc/tsconfig": "npm:^4.0.0"
     prettier: "npm:^3.1.0"
-    prettier-plugin-svelte: "npm:^3.1.1"
+    prettier-plugin-svelte: "npm:^3.1.2"
   languageName: unknown
   linkType: soft
 
@@ -5130,13 +5130,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier-plugin-svelte@npm:^3.1.1":
-  version: 3.1.1
-  resolution: "prettier-plugin-svelte@npm:3.1.1"
+"prettier-plugin-svelte@npm:^3.1.2":
+  version: 3.1.2
+  resolution: "prettier-plugin-svelte@npm:3.1.2"
   peerDependencies:
     prettier: ^3.0.0
     svelte: ^3.2.0 || ^4.0.0-next.0 || ^5.0.0-next.0
-  checksum: 629a5abe65a77f1c1b22cc02c32840810f6b515e38741546932f39a94032e0474258b8ee7ef1d6ccb5292879a32c6e6ea62499a5a15acff5170f353b5bbc5c1c
+  checksum: d0dd3f90c97a79c83d7d77e3d675d97f51190b248bac1a6cfec63add9521e69d111f59958e261b4f4b489949cbc3134cc68db440789075598dc548cfadf34fed
   languageName: node
   linkType: hard
 
@@ -5613,7 +5613,7 @@ __metadata:
     "@types/inquirer": "npm:^9.0.7"
     "@types/koa": "npm:^2.13.12"
     "@types/koa__router": "npm:^12.0.4"
-    "@types/node": "npm:^20.9.4"
+    "@types/node": "npm:^20.10.0"
     concurrently: "npm:^8.2.2"
     esbuild: "npm:^0.19.7"
     etag: "npm:^1.8.1"
@@ -6012,9 +6012,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte-check@npm:^3.6.1":
-  version: 3.6.1
-  resolution: "svelte-check@npm:3.6.1"
+"svelte-check@npm:^3.6.2":
+  version: 3.6.2
+  resolution: "svelte-check@npm:3.6.2"
   dependencies:
     "@jridgewell/trace-mapping": "npm:^0.3.17"
     chokidar: "npm:^3.4.1"
@@ -6028,7 +6028,7 @@ __metadata:
     svelte: ^3.55.0 || ^4.0.0-next.0 || ^4.0.0 || ^5.0.0-next.0
   bin:
     svelte-check: bin/svelte-check
-  checksum: fc9ab42a93be3d62a59ec787b19345da7a6b1b1c1b4aa1842a4f3448d07121f1ed7064499557d6aae090f994fdf47627d154a0bdd98de977c0aa3a21976f1757
+  checksum: 3f389df29268d4df9b561d0b206566e827af84923c70150b2dadfd407bcbdaccbfd561bd8b93884597de62477d62826ff1a5108854641078b692130441a49a55
   languageName: node
   linkType: hard
 
