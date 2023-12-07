@@ -24,7 +24,7 @@
 		"esbuild": "^0.19.8",
 		"rimraf": "^5.0.5",
 		"type-fest": "^4.8.3",
-		"typescript": "^5.3.2",
+		"typescript": "^5.3.3",
 		"xo": "^0.56.0"
 	},
 	"scripts": {
