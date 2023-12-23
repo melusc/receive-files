@@ -4331,10 +4331,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"meow@npm:^12.0.1, meow@npm:^12.1.1":
+"meow@npm:^12.0.1":
   version: 12.1.1
   resolution: "meow@npm:12.1.1"
   checksum: a125ca99a32e2306e2f4cbe651a0d27f6eb67918d43a075f6e80b35e9bf372ebf0fc3a9fbc201cbbc9516444b6265fb3c9f80c5b7ebd32f548aa93eb7c28e088
+  languageName: node
+  linkType: hard
+
+"meow@npm:^13.0.0":
+  version: 13.0.0
+  resolution: "meow@npm:13.0.0"
+  checksum: fab0f91578154c048e792a81704f3f28099ffff900f364df8a85f6e770a57e1c124859a25e186186e149dad30692c7893af0dfd71517bea343bfe5d749b1fa04
   languageName: node
   linkType: hard
 
@@ -5622,7 +5629,7 @@ __metadata:
     is-path-inside: "npm:^4.0.0"
     koa: "npm:^2.14.2"
     koa-body: "npm:^6.0.1"
-    meow: "npm:^12.1.1"
+    meow: "npm:^13.0.0"
     rimraf: "npm:^5.0.5"
     type-fest: "npm:^4.8.3"
     typescript: "npm:^5.3.3"
