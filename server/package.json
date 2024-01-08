@@ -9,9 +9,9 @@
 		"get-port": "^7.0.0",
 		"inquirer": "^9.2.12",
 		"is-path-inside": "^4.0.0",
-		"koa": "^2.14.2",
+		"koa": "^2.15.0",
 		"koa-body": "^6.0.1",
-		"meow": "^13.0.0"
+		"meow": "^13.1.0"
 	},
 	"devDependencies": {
 		"@types/etag": "^1.8.3",
@@ -19,9 +19,9 @@
 		"@types/inquirer": "^9.0.7",
 		"@types/koa": "^2.13.12",
 		"@types/koa__router": "^12.0.4",
-		"@types/node": "^20.10.5",
+		"@types/node": "^20.10.7",
 		"concurrently": "^8.2.2",
-		"esbuild": "^0.19.10",
+		"esbuild": "^0.19.11",
 		"rimraf": "^5.0.5",
 		"type-fest": "^4.9.0",
 		"typescript": "^5.3.3",
