@@ -4,7 +4,7 @@
 	"packageManager": "yarn@4.0.2",
 	"type": "module",
 	"devDependencies": {
-		"@sveltejs/vite-plugin-svelte": "^3.0.1",
+		"@sveltejs/vite-plugin-svelte": "^3.0.2",
 		"@tsconfig/svelte": "^5.0.2",
 		"@typescript-eslint/parser": "^6.19.1",
 		"eslint-config-xo-typescript": "^1.0.1",
