@@ -6,7 +6,7 @@
 		"noEmit": true,
 		"allowImportingTsExtensions": true,
 		"module": "ESNext",
-		"moduleResolution": "bundler",
+		"moduleResolution": "bundler"
 	},
-	"include": ["src/*.ts"],
+	"include": ["src/*.ts"]
 }

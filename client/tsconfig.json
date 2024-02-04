@@ -9,12 +9,12 @@
 		"resolveJsonModule": true,
 		"noEmit": true,
 		"allowImportingTsExtensions": true,
-		"strict": true,
+		"strict": true
 	},
 	"include": ["src/**/*.ts", "src/**/*.svelte", "../shared/*"],
 	"references": [
 		{
-			"path": "./tsconfig.node.json",
-		},
-	],
+			"path": "./tsconfig.node.json"
+		}
+	]
 }
