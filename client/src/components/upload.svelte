@@ -7,12 +7,15 @@
 	let uploading = false;
 	let files: readonly FileKeyed[] = [];
 
-	let formRef: HTMLFormElement;
-	let folderRef: HTMLInputElement;
-	let fileRef: HTMLInputElement;
+	let formReference: HTMLFormElement;
+	let folderReference: HTMLInputElement;
+	let fileReference: HTMLInputElement;
 
 	function handleInput() {
-		const newFiles = [...(folderRef.files ?? []), ...(fileRef.files ?? [])];
+		const newFiles = [
+			...(folderReference.files ?? []),
+			...(fileReference.files ?? []),
+		];
 
 		files = [
 			...files,
@@ -22,7 +25,7 @@
 			})),
 		];
 
-		formRef.reset();
+		formReference.reset();
 	}
 
 	function removeFile(event: CustomEvent<string>) {
@@ -54,7 +57,7 @@
 </script>
 
 <form
-	bind:this={formRef}
+	bind:this={formReference}
 	class="upload-form"
 	on:submit|preventDefault={handleSubmit}
 >
@@ -66,7 +69,7 @@
 			disabled={uploading}
 			class="btn-secondary"
 			on:click={() => {
-				fileRef.click();
+				fileReference.click();
 			}}
 		>
 			Upload files
@@ -76,7 +79,7 @@
 			disabled={uploading}
 			class="btn-secondary"
 			on:click={() => {
-				folderRef.click();
+				folderReference.click();
 			}}
 		>
 			or upload a directory
@@ -86,7 +89,7 @@
 	<Files {files} on:remove={removeFile} />
 
 	<input
-		bind:this={folderRef}
+		bind:this={folderReference}
 		multiple
 		hidden
 		name="folder"
@@ -97,7 +100,7 @@
 	/>
 
 	<input
-		bind:this={fileRef}
+		bind:this={fileReference}
 		multiple
 		hidden
 		type="file"
