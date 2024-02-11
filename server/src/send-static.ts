@@ -10,13 +10,15 @@ import {type ParameterizedContext} from 'koa';
 const notFound = new Set(['ENOENT', 'ENAMETOOLONG', 'ENOTDIR']);
 
 export async function sendStatic(
-	ctx: ParameterizedContext,
+	context: ParameterizedContext,
 	filename: string,
-	distDir: URL,
+	distributionDirectory: URL,
 ) {
-	const path = new URL(filename.replace(/^\//, ''), distDir);
-	if (!isPathInside(fileURLToPath(path), fileURLToPath(distDir))) {
-		ctx.throw(400);
+	const path = new URL(filename.replace(/^\//, ''), distributionDirectory);
+	if (
+		!isPathInside(fileURLToPath(path), fileURLToPath(distributionDirectory))
+	) {
+		context.throw(400);
 		return;
 	}
 
@@ -27,29 +29,28 @@ export async function sendStatic(
 			return stats;
 		}
 
-		ctx.response.status = 200;
-		ctx.response.lastModified = stats.mtime;
-		ctx.response.length = stats.size;
-		ctx.response.type = extname(filename);
+		context.response.status = 200;
+		context.response.lastModified = stats.mtime;
+		context.response.length = stats.size;
+		context.response.type = extname(filename);
 
-		if (!ctx.response.etag) {
-			ctx.response.etag = calculate(stats, {
-				weak: true,
-			});
-		}
+		context.response.etag = calculate(stats, {
+			weak: true,
+		});
 
 		// Fresh based solely on last-modified
-		switch (ctx.request.method) {
+		// eslint-disable-next-line @typescript-eslint/switch-exhaustiveness-check
+		switch (context.request.method) {
 			case 'HEAD': {
-				ctx.status = ctx.request.fresh ? 304 : 200;
+				context.status = context.request.fresh ? 304 : 200;
 				break;
 			}
 
 			case 'GET': {
-				if (ctx.request.fresh) {
-					ctx.status = 304;
+				if (context.request.fresh) {
+					context.status = 304;
 				} else {
-					ctx.body = createReadStream(path);
+					context.body = createReadStream(path);
 				}
 
 				break;
@@ -67,6 +68,6 @@ export async function sendStatic(
 			return;
 		}
 
-		ctx.throw(500);
+		context.throw(500);
 	}
 }

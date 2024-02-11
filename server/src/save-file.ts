@@ -65,13 +65,13 @@ async function handle() {
 }
 
 export function saveFile(
-	outDir: string,
+	outDirectory: string,
 	file: File | File[],
 	shouldConfirmSave: boolean,
 ): void {
 	if (Array.isArray(file)) {
 		for (const file_ of file) {
-			saveFile(outDir, file_, shouldConfirmSave);
+			saveFile(outDirectory, file_, shouldConfirmSave);
 		}
 
 		return;
@@ -86,7 +86,7 @@ export function saveFile(
 	filename = basename(filename);
 
 	queue.push({
-		outDir,
+		outDir: outDirectory,
 		file,
 		shouldConfirmSave,
 		filename,

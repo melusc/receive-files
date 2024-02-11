@@ -6,7 +6,10 @@ import {saveFile} from './save-file.ts';
 import {sendStatic} from './send-static.ts';
 import {getNetworkAddress} from './util.ts';
 
-const staticDistDir = new URL('../../client/dist/', import.meta.url);
+const staticDistributionDirectory = new URL(
+	'../../client/dist/',
+	import.meta.url,
+);
 
 export class Server {
 	constructor(
@@ -18,8 +21,8 @@ export class Server {
 
 		const router = new Router();
 		router.get('/', this.index);
-		router.get('/index.html', ctx => {
-			ctx.redirect('/');
+		router.get('/index.html', context => {
+			context.redirect('/');
 		});
 		router.post('/upload', koaBody({multipart: true}), this.upload);
 		router.get(/.+/, this.static);
@@ -40,29 +43,29 @@ export class Server {
 		});
 	}
 
-	upload: Router.Middleware = async ctx => {
-		const file = ctx.request.files?.['file'];
+	upload: Router.Middleware = async context => {
+		const file = context.request.files?.['file'];
 
 		if (!file) {
-			ctx.throw(400);
+			context.throw(400);
 			return false;
 		}
 
 		try {
 			saveFile(this.path, file, this.confirmSave);
 		} catch {
-			ctx.throw(500);
+			context.throw(500);
 			return false;
 		}
 
-		ctx.body = 'Ok';
-		ctx.redirect('/');
+		context.body = 'Ok';
+		context.redirect('/');
 		return true;
 	};
 
-	index: Router.Middleware = async ctx =>
-		sendStatic(ctx, 'index.html', staticDistDir);
+	index: Router.Middleware = async context =>
+		sendStatic(context, 'index.html', staticDistributionDirectory);
 
-	static: Router.Middleware = async ctx =>
-		sendStatic(ctx, ctx.path, staticDistDir);
+	static: Router.Middleware = async context =>
+		sendStatic(context, context.path, staticDistributionDirectory);
 }
