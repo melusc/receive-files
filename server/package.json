@@ -6,10 +6,10 @@
 	"dependencies": {
 		"@koa/router": "^12.0.1",
 		"etag": "^1.8.1",
-		"get-port": "^7.0.0",
+		"get-port": "^7.1.0",
 		"inquirer": "^9.2.16",
 		"is-path-inside": "^4.0.0",
-		"koa": "^2.15.1",
+		"koa": "^2.15.2",
 		"koa-body": "^6.0.1",
 		"meow": "^13.2.0"
 	},
@@ -19,12 +19,12 @@
 		"@types/inquirer": "^9.0.7",
 		"@types/koa": "^2.15.0",
 		"@types/koa__router": "^12.0.4",
-		"@types/node": "^20.11.29",
+		"@types/node": "^20.11.30",
 		"concurrently": "^8.2.2",
 		"esbuild": "^0.20.2",
 		"rimraf": "^5.0.5",
-		"type-fest": "^4.13.0",
-		"typescript": "^5.4.2",
+		"type-fest": "^4.14.0",
+		"typescript": "^5.4.3",
 		"xo": "^0.58.0"
 	},
 	"scripts": {
