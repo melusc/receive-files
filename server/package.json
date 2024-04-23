@@ -7,7 +7,7 @@
 		"@koa/router": "^12.0.1",
 		"etag": "^1.8.1",
 		"get-port": "^7.1.0",
-		"inquirer": "^9.2.18",
+		"inquirer": "^9.2.19",
 		"is-path-inside": "^4.0.0",
 		"koa": "^2.15.3",
 		"koa-body": "patch:koa-body@npm%3A6.0.1#~/.yarn/patches/koa-body-npm-6.0.1-e672d44ab2.patch",
@@ -23,7 +23,7 @@
 		"concurrently": "^8.2.2",
 		"esbuild": "^0.20.2",
 		"rimraf": "^5.0.5",
-		"type-fest": "^4.15.0",
+		"type-fest": "^4.16.0",
 		"typescript": "^5.4.5",
 		"xo": "^0.58.0"
 	},
