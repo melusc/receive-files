@@ -1,0 +1,36 @@
+diff --git a/lib/utils/parse-with-formidable.js b/lib/utils/parse-with-formidable.js
+index 16bcce4047830eb5931f5785c41eb05f9b943b98..590d283a1f1e556e48a79ffd7b6434c622f3716b 100644
+--- a/lib/utils/parse-with-formidable.js
++++ b/lib/utils/parse-with-formidable.js
+@@ -3,8 +3,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
+     return (mod && mod.__esModule) ? mod : { "default": mod };
+ };
+ Object.defineProperty(exports, "__esModule", { value: true });
+-const formidable_1 = __importDefault(require("formidable"));
++
+ function parseWithFormidable(ctx, options) {
++    return import('formidable').then(formidable_1 => {
+     const { onFileBegin, ...directOptions } = options;
+     const form = (0, formidable_1.default)({ multiples: true, ...directOptions });
+     if (onFileBegin) {
+@@ -18,6 +19,7 @@ function parseWithFormidable(ctx, options) {
+             }
+             resolve({ fields, files });
+         });
++    })
+     });
+ }
+ exports.default = parseWithFormidable;
+diff --git a/package.json b/package.json
+index 781b13c2a1c7fcaca973c0556ced2d31874b03f5..2ca2730e3fca5ef1ab8734f287fc1a5cbb386e93 100644
+--- a/package.json
++++ b/package.json
+@@ -44,7 +44,7 @@
+     "@types/formidable": "^2.0.5",
+     "@types/koa": "^2.13.5",
+     "co-body": "^6.1.0",
+-    "formidable": "^2.0.1",
++    "formidable": "^3.5.1",
+     "zod": "^3.19.1"
+   },
+   "devDependencies": {

@@ -10,7 +10,7 @@
 		"inquirer": "^9.2.18",
 		"is-path-inside": "^4.0.0",
 		"koa": "^2.15.3",
-		"koa-body": "^6.0.1",
+		"koa-body": "patch:koa-body@npm%3A6.0.1#~/.yarn/patches/koa-body-npm-6.0.1-e672d44ab2.patch",
 		"meow": "^13.2.0"
 	},
 	"devDependencies": {
