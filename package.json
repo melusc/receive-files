@@ -1,11 +1,11 @@
 {
 	"name": "file-receiver",
-	"packageManager": "yarn@4.3.0",
+	"packageManager": "yarn@4.3.1",
 	"private": true,
 	"devDependencies": {
 		"@lusc/tsconfig": "^4.1.0",
 		"prettier": "^3.3.2",
-		"prettier-plugin-svelte": "^3.2.4"
+		"prettier-plugin-svelte": "^3.2.5"
 	},
 	"scripts": {
 		"fmt": "prettier -w . **/*.svelte && yarn workspaces foreach -Apiv run fmt",
