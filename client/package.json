@@ -23,5 +23,8 @@
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"clean": "rimraf dist",
 		"fmt": "xo --fix"
+	},
+	"dependencies": {
+		"@lusc/tsconfig": "^5.1.0"
 	}
 }

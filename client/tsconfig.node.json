@@ -1,5 +1,5 @@
 {
-	"extends": "../tsconfig.json",
+	"extends": "@lusc/tsconfig",
 	"compilerOptions": {
 		"moduleResolution": "nodenext",
 		"composite": true
