@@ -23,7 +23,7 @@
 		"@types/node": "^20.14.10",
 		"concurrently": "^8.2.2",
 		"esbuild": "^0.23.0",
-		"rimraf": "^5.0.7",
+		"rimraf": "^6.0.0",
 		"type-fest": "^4.21.0",
 		"typescript": "^5.5.3",
 		"xo": "^0.58.0"
