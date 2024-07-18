@@ -3,8 +3,8 @@
 	"packageManager": "yarn@4.3.1",
 	"private": true,
 	"devDependencies": {
-		"prettier": "^3.3.2",
-		"prettier-plugin-svelte": "^3.2.5"
+		"prettier": "^3.3.3",
+		"prettier-plugin-svelte": "^3.2.6"
 	},
 	"scripts": {
 		"fmt": "prettier -w . **/*.svelte && yarn workspaces foreach -Apiv run fmt",

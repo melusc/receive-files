@@ -1019,7 +1019,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^20.14.10, @types/node@npm:^20.14.11":
+"@types/node@npm:*, @types/node@npm:^20.14.11":
   version: 20.14.11
   resolution: "@types/node@npm:20.14.11"
   dependencies:
@@ -1107,21 +1107,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^7.1.1, @typescript-eslint/parser@npm:^7.16.0":
-  version: 7.16.0
-  resolution: "@typescript-eslint/parser@npm:7.16.0"
+"@typescript-eslint/parser@npm:^7.1.1, @typescript-eslint/parser@npm:^7.16.1":
+  version: 7.16.1
+  resolution: "@typescript-eslint/parser@npm:7.16.1"
   dependencies:
-    "@typescript-eslint/scope-manager": "npm:7.16.0"
-    "@typescript-eslint/types": "npm:7.16.0"
-    "@typescript-eslint/typescript-estree": "npm:7.16.0"
-    "@typescript-eslint/visitor-keys": "npm:7.16.0"
+    "@typescript-eslint/scope-manager": "npm:7.16.1"
+    "@typescript-eslint/types": "npm:7.16.1"
+    "@typescript-eslint/typescript-estree": "npm:7.16.1"
+    "@typescript-eslint/visitor-keys": "npm:7.16.1"
     debug: "npm:^4.3.4"
   peerDependencies:
     eslint: ^8.56.0
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 10c0/bf809c5a59dddc72fc2f11a5d10c78825fa2ffbec72a711e3f783b022d77266a1b709ad450912ebbff24ca9ac20c6baae1d12477735e00aafce662fdbdfa66ef
+  checksum: 10c0/f0c731d9f22ccbcc2a15eb33376ae09cdcdcb4c69fcce425e8e7e5e3ccce51c4ee431d350109a02a09f40df81349c59eddd0264fe53a4194f326c0e0e2e3e83a
   languageName: node
   linkType: hard
 
@@ -1135,13 +1135,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/scope-manager@npm:7.16.0":
-  version: 7.16.0
-  resolution: "@typescript-eslint/scope-manager@npm:7.16.0"
+"@typescript-eslint/scope-manager@npm:7.16.1":
+  version: 7.16.1
+  resolution: "@typescript-eslint/scope-manager@npm:7.16.1"
   dependencies:
-    "@typescript-eslint/types": "npm:7.16.0"
-    "@typescript-eslint/visitor-keys": "npm:7.16.0"
-  checksum: 10c0/e00f57908a1b30fb93ae0e35c46a798669782428e98f927a4d39ef3b1e7d5ad4a48e4e121bd136ed9732c2d1c09cf0b99e4029b1a1a11aadf6f2b92e1003f41c
+    "@typescript-eslint/types": "npm:7.16.1"
+    "@typescript-eslint/visitor-keys": "npm:7.16.1"
+  checksum: 10c0/5105edd927fd45097eb9c16f235ba48c2d9f2f3a3948fbdc4ffdc9a9fc5f130fa46c32d9188fe4bb303bd99508d7f0aad342c2ec0d9ad887aa1416dd54edeb66
   languageName: node
   linkType: hard
 
@@ -1169,10 +1169,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/types@npm:7.16.0":
-  version: 7.16.0
-  resolution: "@typescript-eslint/types@npm:7.16.0"
-  checksum: 10c0/5d7080991241232072c50c1e1be35976631f764fe0f4fd43cf1026a2722aab772a14906dfaa322183b040c6ca8ae4494a78f653dd3b22bcdbdfe063a301240b0
+"@typescript-eslint/types@npm:7.16.1":
+  version: 7.16.1
+  resolution: "@typescript-eslint/types@npm:7.16.1"
+  checksum: 10c0/5ab7bfcac81adb01672057270d0273da98dcf50d2add5819b4787b5973f6624d11ad33d6fb495f80fe628fefa3a5ed319b433ed57e9121e444cfc002e1e48625
   languageName: node
   linkType: hard
 
@@ -1195,12 +1195,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/typescript-estree@npm:7.16.0":
-  version: 7.16.0
-  resolution: "@typescript-eslint/typescript-estree@npm:7.16.0"
+"@typescript-eslint/typescript-estree@npm:7.16.1":
+  version: 7.16.1
+  resolution: "@typescript-eslint/typescript-estree@npm:7.16.1"
   dependencies:
-    "@typescript-eslint/types": "npm:7.16.0"
-    "@typescript-eslint/visitor-keys": "npm:7.16.0"
+    "@typescript-eslint/types": "npm:7.16.1"
+    "@typescript-eslint/visitor-keys": "npm:7.16.1"
     debug: "npm:^4.3.4"
     globby: "npm:^11.1.0"
     is-glob: "npm:^4.0.3"
@@ -1210,7 +1210,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 10c0/2b4e7cbdb1b43d937d1dde057ab18111e0f2bb16cb2d3f48a60c5611ff81d0b64455b325475bcce6213c54653b6c4d3b475526f7ffcf8f74014ab9b64a3d6d92
+  checksum: 10c0/979269e9d42d75c0e49f47c7bb5e9554bd29041339c6fecfe5c76726699bce25132bef8b54210769e4f0abb858a278923340d3e4decc6551406e2c5ec065fe04
   languageName: node
   linkType: hard
 
@@ -1238,13 +1238,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/visitor-keys@npm:7.16.0":
-  version: 7.16.0
-  resolution: "@typescript-eslint/visitor-keys@npm:7.16.0"
+"@typescript-eslint/visitor-keys@npm:7.16.1":
+  version: 7.16.1
+  resolution: "@typescript-eslint/visitor-keys@npm:7.16.1"
   dependencies:
-    "@typescript-eslint/types": "npm:7.16.0"
+    "@typescript-eslint/types": "npm:7.16.1"
     eslint-visitor-keys: "npm:^3.4.3"
-  checksum: 10c0/a3c614cdc2e9c37e007e15e1ee169a9ad040fac189d0abd2b840f78910b499b362493bbf0019c5979785567ae30839a799b4dd219f70a668bac930fd79fdc5d3
+  checksum: 10c0/060bc6770ba3ea271c6a844501f4dfee1b8842a0c405e60d2a258466b1b4e66086234a3fddac8745bb1a39a89eab29afeaf16133ad925bd426ac8fdb13fb7f94
   languageName: node
   linkType: hard
 
@@ -1773,14 +1773,14 @@ __metadata:
     "@lusc/tsconfig": "npm:^5.1.0"
     "@sveltejs/vite-plugin-svelte": "npm:^3.1.1"
     "@tsconfig/svelte": "npm:^5.0.4"
-    "@typescript-eslint/parser": "npm:^7.16.0"
+    "@typescript-eslint/parser": "npm:^7.16.1"
     eslint-config-xo-typescript: "npm:^4.0.0"
-    eslint-plugin-svelte: "npm:^2.41.0"
-    sass: "npm:^1.77.7"
+    eslint-plugin-svelte: "npm:^2.42.0"
+    sass: "npm:^1.77.8"
     svelte: "npm:^4.2.18"
     svelte-check: "npm:^3.8.4"
     typescript: "npm:^5.5.3"
-    vite: "npm:^5.3.3"
+    vite: "npm:^5.3.4"
     xo: "npm:^0.58.0"
   languageName: unknown
   linkType: soft
@@ -2828,9 +2828,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-svelte@npm:^2.41.0":
-  version: 2.41.0
-  resolution: "eslint-plugin-svelte@npm:2.41.0"
+"eslint-plugin-svelte@npm:^2.42.0":
+  version: 2.42.0
+  resolution: "eslint-plugin-svelte@npm:2.42.0"
   dependencies:
     "@eslint-community/eslint-utils": "npm:^4.4.0"
     "@jridgewell/sourcemap-codec": "npm:^1.4.15"
@@ -2842,14 +2842,14 @@ __metadata:
     postcss-safe-parser: "npm:^6.0.0"
     postcss-selector-parser: "npm:^6.1.0"
     semver: "npm:^7.6.2"
-    svelte-eslint-parser: "npm:^0.39.2"
+    svelte-eslint-parser: "npm:^0.40.0"
   peerDependencies:
     eslint: ^7.0.0 || ^8.0.0-0 || ^9.0.0-0
-    svelte: ^3.37.0 || ^4.0.0 || ^5.0.0-next.155
+    svelte: ^3.37.0 || ^4.0.0 || ^5.0.0-next.181
   peerDependenciesMeta:
     svelte:
       optional: true
-  checksum: 10c0/5b0b58439765b916c61ff81b632f0df72f60676aaacb0c0fb06277c784ff8bd7d72c3bcbfafc94b2cc74e66d748df9b7d4273084e65999627b1d8f431439224a
+  checksum: 10c0/1bbc08136f922f05a3197466ea3a63cd121e0446488457e3e96792710d9348c5f782629307e43e8fcafdbfe6e82eacf24e4fce7e0f8d50764a95f31a2c72aeef
   languageName: node
   linkType: hard
 
@@ -3150,8 +3150,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "file-receiver@workspace:."
   dependencies:
-    prettier: "npm:^3.3.2"
-    prettier-plugin-svelte: "npm:^3.2.5"
+    prettier: "npm:^3.3.3"
+    prettier-plugin-svelte: "npm:^3.2.6"
   languageName: unknown
   linkType: soft
 
@@ -5374,22 +5374,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier-plugin-svelte@npm:^3.2.5":
-  version: 3.2.5
-  resolution: "prettier-plugin-svelte@npm:3.2.5"
+"prettier-plugin-svelte@npm:^3.2.6":
+  version: 3.2.6
+  resolution: "prettier-plugin-svelte@npm:3.2.6"
   peerDependencies:
     prettier: ^3.0.0
     svelte: ^3.2.0 || ^4.0.0-next.0 || ^5.0.0-next.0
-  checksum: 10c0/fd9d44848522fbaaeb73d70cc7f90bc01ddfbb5f1f937d2e1c4f15575d2c154451d96618075a0d41b18254a63a647aaa03600767dc4e4fcce58df541bd43b748
+  checksum: 10c0/d7e89e03bf6c6c36b0062302bd8b80c345059be9d01927cfdc63ee44b6ac7bb5cf952f5f4aa087de1bd614521abcd7ee1e395509fc1236be4dd66c3b41ce5586
   languageName: node
   linkType: hard
 
-"prettier@npm:^3.2.5, prettier@npm:^3.3.2":
-  version: 3.3.2
-  resolution: "prettier@npm:3.3.2"
+"prettier@npm:^3.2.5, prettier@npm:^3.3.3":
+  version: 3.3.3
+  resolution: "prettier@npm:3.3.3"
   bin:
     prettier: bin/prettier.cjs
-  checksum: 10c0/39ed27d17f0238da6dd6571d63026566bd790d3d0edac57c285fbab525982060c8f1e01955fe38134ab10f0951a6076da37f015db8173c02f14bc7f0803a384c
+  checksum: 10c0/b85828b08e7505716324e4245549b9205c0cacb25342a030ba8885aba2039a115dbcf75a0b7ca3b37bc9d101ee61fab8113fc69ca3359f2a226f1ecc07ad2e26
   languageName: node
   linkType: hard
 
@@ -5646,14 +5646,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rimraf@npm:^6.0.0":
-  version: 6.0.0
-  resolution: "rimraf@npm:6.0.0"
+"rimraf@npm:^6.0.1":
+  version: 6.0.1
+  resolution: "rimraf@npm:6.0.1"
   dependencies:
     glob: "npm:^11.0.0"
+    package-json-from-dist: "npm:^1.0.0"
   bin:
     rimraf: dist/esm/bin.mjs
-  checksum: 10c0/32d07c542490db96efd515b27f857f45b71b2169a1b533052630d119034450d3afcf766adc2df43314378f9168407ef222d7d1104c48cc9d385e97b17964b3bf
+  checksum: 10c0/b30b6b072771f0d1e73b4ca5f37bb2944ee09375be9db5f558fcd3310000d29dfcfa93cf7734d75295ad5a7486dc8e40f63089ced1722a664539ffc0c3ece8c6
   languageName: node
   linkType: hard
 
@@ -5796,16 +5797,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.77.7":
-  version: 1.77.7
-  resolution: "sass@npm:1.77.7"
+"sass@npm:^1.77.8":
+  version: 1.77.8
+  resolution: "sass@npm:1.77.8"
   dependencies:
     chokidar: "npm:>=3.0.0 <4.0.0"
     immutable: "npm:^4.0.0"
     source-map-js: "npm:>=0.6.2 <2.0.0"
   bin:
     sass: sass.js
-  checksum: 10c0/6cacbf4b5165d30a9be0f09438aed85ff0617e5087442e65c23c8464750ff1b9988855a58f36b420b62f992d1e82403f99810aba7731519d3d026847e21a5635
+  checksum: 10c0/2bfd62794070352c804f949e69bd8bb5b4ec846deeb924251b2c3f7b503170fb1ae186f513f0166907749eb34e0277dee747edcb78c886fb471aac01be1e864c
   languageName: node
   linkType: hard
 
@@ -5847,7 +5848,7 @@ __metadata:
     "@types/formidable": "npm:^3.4.5"
     "@types/koa": "npm:^2.15.0"
     "@types/koa__router": "npm:^12.0.4"
-    "@types/node": "npm:^20.14.10"
+    "@types/node": "npm:^20.14.11"
     concurrently: "npm:^8.2.2"
     esbuild: "npm:^0.23.0"
     etag: "npm:^1.8.1"
@@ -5856,8 +5857,8 @@ __metadata:
     koa: "npm:^2.15.3"
     koa-body: "patch:koa-body@npm%3A6.0.1#~/.yarn/patches/koa-body-npm-6.0.1-e672d44ab2.patch"
     meow: "npm:^13.2.0"
-    rimraf: "npm:^6.0.0"
-    type-fest: "npm:^4.21.0"
+    rimraf: "npm:^6.0.1"
+    type-fest: "npm:^4.22.0"
     typescript: "npm:^5.5.3"
     xo: "npm:^0.58.0"
   languageName: unknown
@@ -6256,21 +6257,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte-eslint-parser@npm:^0.39.2":
-  version: 0.39.2
-  resolution: "svelte-eslint-parser@npm:0.39.2"
+"svelte-eslint-parser@npm:^0.40.0":
+  version: 0.40.0
+  resolution: "svelte-eslint-parser@npm:0.40.0"
   dependencies:
     eslint-scope: "npm:^7.2.2"
     eslint-visitor-keys: "npm:^3.4.3"
     espree: "npm:^9.6.1"
-    postcss: "npm:^8.4.38"
+    postcss: "npm:^8.4.39"
     postcss-scss: "npm:^4.0.9"
   peerDependencies:
-    svelte: ^3.37.0 || ^4.0.0 || ^5.0.0-next.115
+    svelte: ^3.37.0 || ^4.0.0 || ^5.0.0-next.181
   peerDependenciesMeta:
     svelte:
       optional: true
-  checksum: 10c0/c9fbb1ef71c88e06e079724e3605636656b5742d5fc5e1d90e46b35145cf45fde1a661674cb642b3c888633c8c191f434b8d18b90f8859d6355314d36ceabc75
+  checksum: 10c0/71638163784143014fbb598c95316a026455b353bf31592d153086a0ca0ea5b7c3f9c34d4519b8d223151dc4ef04d3838bf8f143ac6a9174ffcdcc06aec8adc2
   languageName: node
   linkType: hard
 
@@ -6502,10 +6503,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"type-fest@npm:^4.21.0":
-  version: 4.21.0
-  resolution: "type-fest@npm:4.21.0"
-  checksum: 10c0/60c09995336ea15a405caa76a9ad9238e7ea324d945519880c560e4ee0845479889c45a51810ca81b0f37abd46229a06d2e17ab9b12d1a5cbe335af56819c92b
+"type-fest@npm:^4.22.0":
+  version: 4.22.0
+  resolution: "type-fest@npm:4.22.0"
+  checksum: 10c0/31a4529606283e871973bbe6fd942ea18ea1864633040988db22749c2f725ede79324c4ffcdecd99771656847c414eb05166e2f99fd6959c2b3dc7950ab86962
   languageName: node
   linkType: hard
 
@@ -6703,9 +6704,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^5.3.3":
-  version: 5.3.3
-  resolution: "vite@npm:5.3.3"
+"vite@npm:^5.3.4":
+  version: 5.3.4
+  resolution: "vite@npm:5.3.4"
   dependencies:
     esbuild: "npm:^0.21.3"
     fsevents: "npm:~2.3.3"
@@ -6739,7 +6740,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 10c0/a796872e1d11875d994615cd00da185c80eeb7753034d35c096050bf3c269c02004070cf623c5fe2a4a90ea2f12488e6f9d13933ec810f117f1b931e1b5e3385
+  checksum: 10c0/604a1c8698bcf09d6889533c552f20137c80cb5027e9e7ddf6215d51e3df763414f8712168c22b3c8c16383aff9447094c05f21d7cca3c115874ff9d12e1538e
   languageName: node
   linkType: hard
 
