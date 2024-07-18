@@ -5,20 +5,7 @@ import {basename, resolve} from 'node:path';
 
 // eslint-disable-next-line import/no-extraneous-dependencies
 import {type File} from 'formidable';
-import inquirer from 'inquirer';
-
-const confirm = async (message: string) => {
-	const result = await inquirer.prompt<{save: boolean}>([
-		{
-			name: 'save',
-			type: 'confirm',
-			message,
-			default: true,
-		},
-	]);
-
-	return result.save;
-};
+import confirm from '@inquirer/confirm';
 
 let isRunning = false;
 const queue: Array<{
@@ -51,7 +38,7 @@ async function handle() {
 				message = `Save "${filename}"?`;
 			}
 
-			save = await confirm(message);
+			save = await confirm({message});
 		}
 
 		if (save) {

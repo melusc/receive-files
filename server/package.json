@@ -4,11 +4,11 @@
 	"packageManager": "yarn@4.3.1",
 	"type": "module",
 	"dependencies": {
+		"@inquirer/confirm": "^3.1.15",
 		"@koa/router": "^12.0.1",
 		"@lusc/tsconfig": "^5.1.0",
 		"etag": "^1.8.1",
 		"get-port": "^7.1.0",
-		"inquirer": "^10.0.1",
 		"is-path-inside": "^4.0.0",
 		"koa": "^2.15.3",
 		"koa-body": "patch:koa-body@npm%3A6.0.1#~/.yarn/patches/koa-body-npm-6.0.1-e672d44ab2.patch",
@@ -17,7 +17,6 @@
 	"devDependencies": {
 		"@types/etag": "^1.8.3",
 		"@types/formidable": "^3.4.5",
-		"@types/inquirer": "^9.0.7",
 		"@types/koa": "^2.15.0",
 		"@types/koa__router": "^12.0.4",
 		"@types/node": "^20.14.10",
