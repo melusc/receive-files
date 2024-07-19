@@ -1,4 +1,16 @@
 {
+	"overrides": {
+		"files": "**/*.ts",
+		"rules": {
+			"n/file-extension-in-import": [
+				"error",
+				"always",
+				{
+					".ts": "always"
+				}
+			]
+		}
+	},
 	"rules": {
 		"no-mixed-spaces-and-tabs": "off",
 		"@typescript-eslint/indent": "off",
@@ -7,13 +19,6 @@
 			{
 				"newlines-between": "always",
 				"warnOnUnassignedImports": true
-			}
-		],
-		"n/file-extension-in-import": [
-			"error",
-			"always",
-			{
-				".ts": "always"
 			}
 		]
 	}
