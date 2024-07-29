@@ -20,6 +20,7 @@
 				"newlines-between": "always",
 				"warnOnUnassignedImports": true
 			}
-		]
+		],
+		"n/file-extension-in-import": "off"
 	}
 }
