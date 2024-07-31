@@ -6,7 +6,7 @@
 	"devDependencies": {
 		"@sveltejs/vite-plugin-svelte": "^3.1.1",
 		"@tsconfig/svelte": "^5.0.4",
-		"@typescript-eslint/parser": "^7.17.0",
+		"@typescript-eslint/parser": "^8.0.0",
 		"eslint-config-xo-typescript": "^5.0.0",
 		"eslint-plugin-svelte": "^2.43.0",
 		"sass": "^1.77.8",
