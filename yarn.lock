@@ -576,16 +576,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@koa/router@npm:^12.0.1":
-  version: 12.0.1
-  resolution: "@koa/router@npm:12.0.1"
+"@koa/router@npm:^13.0.0":
+  version: 13.0.0
+  resolution: "@koa/router@npm:13.0.0"
   dependencies:
-    debug: "npm:^4.3.4"
     http-errors: "npm:^2.0.0"
     koa-compose: "npm:^4.1.0"
-    methods: "npm:^1.1.2"
-    path-to-regexp: "npm:^6.2.1"
-  checksum: 10c0/978a668a88dad8cba38afe0df537b95f6d49bdaa60af5f479240fde3a87a7046cf8c068a58c355442335794db5cb583b88ca07a4b65f217b44925a7ce99ccc1d
+    path-to-regexp: "npm:^6.2.2"
+  checksum: 10c0/523b31858fd95d3d3cb27d2ffe41f264dc99e6e6f7b19db17f058feefcade8197ce6aa562078c088d6822617e05988bf98a674e1dab72a7ce7f79150a98e16e2
   languageName: node
   linkType: hard
 
@@ -4917,13 +4915,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"methods@npm:^1.1.2":
-  version: 1.1.2
-  resolution: "methods@npm:1.1.2"
-  checksum: 10c0/bdf7cc72ff0a33e3eede03708c08983c4d7a173f91348b4b1e4f47d4cdbf734433ad971e7d1e8c77247d9e5cd8adb81ea4c67b0a2db526b758b2233d7814b8b2
-  languageName: node
-  linkType: hard
-
 "micro-spelling-correcter@npm:^1.1.1":
   version: 1.1.1
   resolution: "micro-spelling-correcter@npm:1.1.1"
@@ -5523,7 +5514,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"path-to-regexp@npm:^6.2.1":
+"path-to-regexp@npm:^6.2.2":
   version: 6.2.2
   resolution: "path-to-regexp@npm:6.2.2"
   checksum: 10c0/4b60852d3501fd05ca9dd08c70033d73844e5eca14e41f499f069afa8364f780f15c5098002f93bd42af8b3514de62ac6e82a53b5662de881d2b08c9ef21ea6b
@@ -6174,7 +6165,7 @@ __metadata:
   resolution: "server@workspace:server"
   dependencies:
     "@inquirer/confirm": "npm:^3.1.17"
-    "@koa/router": "npm:^12.0.1"
+    "@koa/router": "npm:^13.0.0"
     "@lusc/tsconfig": "npm:^5.1.0"
     "@types/etag": "npm:^1.8.3"
     "@types/formidable": "npm:^3.4.5"
