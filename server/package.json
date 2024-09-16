@@ -4,7 +4,7 @@
 	"packageManager": "yarn@4.4.1",
 	"type": "module",
 	"dependencies": {
-		"@inquirer/confirm": "^3.2.0",
+		"@inquirer/confirm": "^4.0.1",
 		"@koa/router": "^13.0.1",
 		"@lusc/tsconfig": "^5.1.0",
 		"etag": "^1.8.1",
