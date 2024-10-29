@@ -3,11 +3,15 @@
 
 	import Close from './close.svelte';
 
-	const {file, key, onremove} = $props<{
+	const {
+		file,
+		key,
+		onremove,
+	}: {
 		file: File;
 		key: string;
 		onremove: (key: string) => void;
-	}>();
+	} = $props();
 
 	function removeFile(key: string) {
 		return () => {

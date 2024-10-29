@@ -3,10 +3,13 @@
 
 	import File from './file.svelte';
 
-	const {files, onremove} = $props<{
+	const {
+		files,
+		onremove,
+	}: {
 		files: readonly FileKeyed[];
 		onremove: (key: string) => void;
-	}>();
+	} = $props();
 </script>
 
 {#if files.length > 0}
