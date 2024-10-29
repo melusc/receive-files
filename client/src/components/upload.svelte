@@ -4,17 +4,19 @@
 
 	import Files from './files.svelte';
 
-	let uploading = false;
-	let files: readonly FileKeyed[] = [];
+	let uploading = $state(false);
+	let files = $state<readonly FileKeyed[]>([]);
 
-	let formReference: HTMLFormElement;
-	let folderReference: HTMLInputElement;
-	let fileReference: HTMLInputElement;
+	let formReference = $state<HTMLFormElement>();
+	let folderReference = $state<HTMLInputElement>();
+	let fileReference = $state<HTMLInputElement>();
 
-	function handleInput() {
+	function handleInput(event: Event) {
+		event.preventDefault();
+
 		const newFiles = [
-			...(folderReference.files ?? []),
-			...(fileReference.files ?? []),
+			...(folderReference!.files ?? []),
+			...(fileReference!.files ?? []),
 		];
 
 		files = [
@@ -25,15 +27,16 @@
 			})),
 		];
 
-		formReference.reset();
+		formReference!.reset();
 	}
 
-	function removeFile(event: CustomEvent<string>) {
-		const key = event.detail;
+	function removeFile(key: string) {
 		files = files.filter(file => file.key !== key);
 	}
 
-	async function handleSubmit() {
+	async function handleSubmit(event: SubmitEvent) {
+		event.preventDefault();
+
 		const form = new FormData();
 
 		for (const {file} of files) {
@@ -56,11 +59,7 @@
 	}
 </script>
 
-<form
-	bind:this={formReference}
-	class="upload-form"
-	on:submit|preventDefault={handleSubmit}
->
+<form bind:this={formReference} class="upload-form" onsubmit={handleSubmit}>
 	<h1>File uploader</h1>
 
 	<div>
@@ -68,8 +67,8 @@
 			type="button"
 			disabled={uploading}
 			class="btn-secondary"
-			on:click={() => {
-				fileReference.click();
+			onclick={() => {
+				fileReference!.click();
 			}}
 		>
 			Upload files
@@ -78,15 +77,15 @@
 			type="button"
 			disabled={uploading}
 			class="btn-secondary"
-			on:click={() => {
-				folderReference.click();
+			onclick={() => {
+				folderReference!.click();
 			}}
 		>
 			or upload a directory
 		</button>
 	</div>
 
-	<Files {files} on:remove={removeFile} />
+	<Files {files} onremove={removeFile} />
 
 	<input
 		bind:this={folderReference}
@@ -95,7 +94,7 @@
 		name="folder"
 		type="file"
 		disabled={uploading}
-		on:input|preventDefault={handleInput}
+		oninput={handleInput}
 		use:makeDirectoryInput
 	/>
 
@@ -106,7 +105,7 @@
 		type="file"
 		name="file"
 		disabled={uploading}
-		on:input|preventDefault={handleInput}
+		oninput={handleInput}
 	/>
 	<button
 		type="submit"
