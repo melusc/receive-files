@@ -1151,12 +1151,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^22.8.5":
-  version: 22.8.5
-  resolution: "@types/node@npm:22.8.5"
+"@types/node@npm:*, @types/node@npm:^22.8.7":
+  version: 22.8.7
+  resolution: "@types/node@npm:22.8.7"
   dependencies:
     undici-types: "npm:~6.19.8"
-  checksum: 10c0/5e43553026c83f18bfa381d35c8fd608e69d12d0f0fe4601e8bb98b651a3b240be9d66c1f2f4decdbebb41d55b18e89238b02f3992d820d89801b9b3625ba8ab
+  checksum: 10c0/14372885db80059ed6e92c320b2bcd8f7dc271698adce11f51aa0f424a3f82aa1749a4f66321b87043791b894346b2458d514cbb65ce70167c2fd8a78a124947
   languageName: node
   linkType: hard
 
@@ -1922,8 +1922,8 @@ __metadata:
     "@typescript-eslint/parser": "npm:^8.12.2"
     eslint-config-xo-typescript: "npm:^5.0.0"
     eslint-plugin-svelte: "npm:^2.46.0"
-    sass: "npm:^1.80.5"
-    svelte: "npm:^5.1.6"
+    sass: "npm:^1.80.6"
+    svelte: "npm:^5.1.9"
     svelte-check: "npm:^4.0.5"
     typescript: "npm:^5.6.3"
     vite: "npm:^5.4.5"
@@ -5916,17 +5916,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.80.5":
-  version: 1.80.5
-  resolution: "sass@npm:1.80.5"
+"sass@npm:^1.80.6":
+  version: 1.80.6
+  resolution: "sass@npm:1.80.6"
   dependencies:
     "@parcel/watcher": "npm:^2.4.1"
     chokidar: "npm:^4.0.0"
     immutable: "npm:^4.0.0"
     source-map-js: "npm:>=0.6.2 <2.0.0"
+  dependenciesMeta:
+    "@parcel/watcher":
+      optional: true
   bin:
     sass: sass.js
-  checksum: 10c0/d592e57c037315f4c5976af3d37ce4c7758b1b4e89d064455d6992829ea59888c71b9dbc86f7fc8dca87ac98ebc9cece10e5c8fc5509bf192db81712a34fd579
+  checksum: 10c0/04ce40d4dcf06cf2a94a66c1cc4fd4a9eb4033fd039291acd0be9d1d4123860da568c5cbef9de8493ffbedd8acae1cd0b8346f5da21c6f7cf0ffd3477730beca
   languageName: node
   linkType: hard
 
@@ -5968,7 +5971,7 @@ __metadata:
     "@types/formidable": "npm:^3.4.5"
     "@types/koa": "npm:^2.15.0"
     "@types/koa__router": "npm:^12.0.4"
-    "@types/node": "npm:^22.8.5"
+    "@types/node": "npm:^22.8.7"
     concurrently: "npm:^9.0.1"
     esbuild: "npm:^0.24.0"
     etag: "npm:^1.8.1"
@@ -6367,9 +6370,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte@npm:^5.1.6":
-  version: 5.1.6
-  resolution: "svelte@npm:5.1.6"
+"svelte@npm:^5.1.9":
+  version: 5.1.9
+  resolution: "svelte@npm:5.1.9"
   dependencies:
     "@ampproject/remapping": "npm:^2.3.0"
     "@jridgewell/sourcemap-codec": "npm:^1.5.0"
@@ -6384,7 +6387,7 @@ __metadata:
     locate-character: "npm:^3.0.0"
     magic-string: "npm:^0.30.11"
     zimmerframe: "npm:^1.1.2"
-  checksum: 10c0/2295d11dfa310192920393c784fd2dc73a83f2057097739e130a3d70f97776092a5da5e584dc159a607f9ef5bdbb54d98ecb5d95d89e60831d8980028409a2e9
+  checksum: 10c0/4cd14a0ecd0dce97a4d69cdbf205581e55d6b817a0abfa4a9a3b19d1afc2bfbd66ae2d6898f21ff37c3d738757bfb76f6fce027bf1779ff2e89d758a46ea016a
   languageName: node
   linkType: hard
 
