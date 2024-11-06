@@ -1674,11 +1674,11 @@ __metadata:
     eslint: "npm:^9.14.0"
     eslint-plugin-svelte: "npm:^2.46.0"
     sass: "npm:^1.80.6"
-    svelte: "npm:^5.1.10"
+    svelte: "npm:^5.1.11"
     svelte-check: "npm:^4.0.5"
     svelte-eslint-parser: "npm:^0.43.0"
     typescript: "npm:^5.6.3"
-    vite: "npm:^5.4.5"
+    vite: "npm:^5.4.10"
   languageName: unknown
   linkType: soft
 
@@ -4586,7 +4586,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte@npm:^5.1.10":
+"svelte@npm:^5.1.11":
   version: 5.1.11
   resolution: "svelte@npm:5.1.11"
   dependencies:
@@ -4843,7 +4843,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^5.4.5":
+"vite@npm:^5.4.10":
   version: 5.4.10
   resolution: "vite@npm:5.4.10"
   dependencies:
