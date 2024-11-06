@@ -14,7 +14,7 @@ const staticDistributionDirectory = new URL(
 export class Server {
 	constructor(
 		public readonly port: number,
-		public readonly path: string,
+		public readonly outDirectory: string,
 		public readonly confirmSave: boolean,
 	) {
 		const app = new Koa();
@@ -43,7 +43,7 @@ export class Server {
 		});
 	}
 
-	upload: Router.Middleware = async context => {
+	upload: Router.Middleware = context => {
 		const file = context.request.files?.['file'];
 
 		if (!file) {
@@ -52,7 +52,7 @@ export class Server {
 		}
 
 		try {
-			saveFile(this.path, file, this.confirmSave);
+			saveFile(this.outDirectory, file, this.confirmSave);
 		} catch {
 			context.throw(500);
 			return false;

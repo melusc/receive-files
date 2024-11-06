@@ -1,10 +1,7 @@
-/* eslint-disable no-await-in-loop */
-
 import {copyFile, stat, unlink} from 'node:fs/promises';
-import {basename, resolve} from 'node:path';
+import path from 'node:path';
 
-// eslint-disable-next-line import/no-extraneous-dependencies
-import {type File} from 'formidable';
+import type {File} from 'formidable';
 import confirm from '@inquirer/confirm';
 
 let isRunning = false;
@@ -24,15 +21,14 @@ async function handle() {
 
 	while (queue.length > 0) {
 		const {outDir, file, shouldConfirmSave, filename} = queue.shift()!;
-
-		const path = resolve(outDir, basename(filename));
+		const outPath = path.resolve(outDir, path.basename(filename));
 
 		let save = true;
 		if (shouldConfirmSave) {
 			let message: string;
 
 			try {
-				await stat(path);
+				await stat(outPath);
 				message = `Save and overwrite "${filename}"?`;
 			} catch {
 				message = `Save "${filename}"?`;
@@ -42,7 +38,6 @@ async function handle() {
 		}
 
 		if (save) {
-			const outPath = resolve(outDir, filename);
 			await copyFile(file.filepath, outPath);
 			console.log('Saved to "%s"', outPath);
 		}
@@ -72,7 +67,7 @@ export function saveFile(
 		throw new Error('No filename provided');
 	}
 
-	filename = basename(filename);
+	filename = path.basename(filename);
 
 	queue.push({
 		outDir: outDirectory,
