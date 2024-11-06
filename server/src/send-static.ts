@@ -1,6 +1,6 @@
 import {createReadStream} from 'node:fs';
 import {stat} from 'node:fs/promises';
-import {extname} from 'node:path';
+import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 
 import calculate from 'etag';
@@ -14,16 +14,22 @@ export async function sendStatic(
 	filename: string,
 	distributionDirectory: URL,
 ) {
-	const path = new URL(filename.replace(/^\//, ''), distributionDirectory);
+	const requestedPath = new URL(
+		filename.replace(/^\//, ''),
+		distributionDirectory,
+	);
 	if (
-		!isPathInside(fileURLToPath(path), fileURLToPath(distributionDirectory))
+		!isPathInside(
+			fileURLToPath(requestedPath),
+			fileURLToPath(distributionDirectory),
+		)
 	) {
 		context.throw(400);
 		return;
 	}
 
 	try {
-		const stats = await stat(path);
+		const stats = await stat(requestedPath);
 
 		if (!stats.isFile()) {
 			return stats;
@@ -32,14 +38,13 @@ export async function sendStatic(
 		context.response.status = 200;
 		context.response.lastModified = stats.mtime;
 		context.response.length = stats.size;
-		context.response.type = extname(filename);
+		context.response.type = path.extname(filename);
 
 		context.response.etag = calculate(stats, {
 			weak: true,
 		});
 
 		// Fresh based solely on last-modified
-		// eslint-disable-next-line @typescript-eslint/switch-exhaustiveness-check
 		switch (context.request.method) {
 			case 'HEAD': {
 				context.status = context.request.fresh ? 304 : 200;
@@ -50,7 +55,7 @@ export async function sendStatic(
 				if (context.request.fresh) {
 					context.status = 304;
 				} else {
-					context.body = createReadStream(path);
+					context.body = createReadStream(requestedPath);
 				}
 
 				break;
@@ -62,8 +67,8 @@ export async function sendStatic(
 		return stats;
 	} catch (error) {
 		if (
-			'code' in (error as Error)
-			&& notFound.has((error as {code: string}).code)
+			'code' in (error as Error) &&
+			notFound.has((error as {code: string}).code)
 		) {
 			return;
 		}

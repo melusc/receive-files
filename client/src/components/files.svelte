@@ -15,7 +15,7 @@
 {#if files.length > 0}
 	<h2>Files to upload</h2>
 	<div class="files-list">
-		{#each files as {file, key} (key)}
+		{#each files as { file, key } (key)}
 			<File {key} {file} {onremove} />
 		{/each}
 	</div>

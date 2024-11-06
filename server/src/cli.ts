@@ -1,5 +1,5 @@
 import {stat} from 'node:fs/promises';
-import {resolve} from 'node:path';
+import path from 'node:path';
 import process, {cwd} from 'node:process';
 
 import getPort from 'get-port';
@@ -37,7 +37,7 @@ const {flags, input} = meow(
 	},
 );
 
-const path = resolve(input[0] ?? cwd());
+const outDirectory = path.resolve(input[0] ?? cwd());
 
 async function checkIsDirectory(path: string): Promise<boolean> {
 	try {
@@ -54,7 +54,7 @@ async function checkIsDirectory(path: string): Promise<boolean> {
 	}
 }
 
-const isDirectory = await checkIsDirectory(path);
+const isDirectory = await checkIsDirectory(outDirectory);
 if (isDirectory) {
 	const port = await getPort({
 		port: new Set([flags.port, 4444]),
@@ -65,9 +65,8 @@ if (isDirectory) {
 		console.log();
 	}
 
-	// eslint-disable-next-line no-new
-	new Server(port, path, flags.confirm);
+	new Server(port, outDirectory, flags.confirm);
 } else {
-	console.error('"%s" is not a directory or does not exist.', path);
+	console.error('"%s" is not a directory or does not exist.', outDirectory);
 	process.exitCode = 1;
 }
