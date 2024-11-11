@@ -1,8 +1,8 @@
 import {copyFile, stat, unlink} from 'node:fs/promises';
 import path from 'node:path';
 
-import type {File} from 'formidable';
 import confirm from '@inquirer/confirm';
+import type {File} from 'formidable';
 
 let isRunning = false;
 const queue: Array<{

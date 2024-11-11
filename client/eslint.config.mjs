@@ -1,6 +1,6 @@
 import config from '@lusc/eslint-config';
-import eslintPluginSvelte from 'eslint-plugin-svelte';
 import tsParser from '@typescript-eslint/parser';
+import eslintPluginSvelte from 'eslint-plugin-svelte';
 import svelteParser from 'svelte-eslint-parser';
 
 export default [
