@@ -607,9 +607,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@lusc/eslint-config@npm:^2.0.4":
-  version: 2.0.4
-  resolution: "@lusc/eslint-config@npm:2.0.4"
+"@lusc/eslint-config@npm:^2.0.6":
+  version: 2.0.6
+  resolution: "@lusc/eslint-config@npm:2.0.6"
   dependencies:
     "@eslint-community/eslint-plugin-eslint-comments": "npm:^4.4.1"
     "@eslint/js": "npm:^9.14.0"
@@ -622,7 +622,7 @@ __metadata:
     globals: "npm:^15.12.0"
     typescript: "npm:^5.6.3"
     typescript-eslint: "npm:^8.13.0"
-  checksum: 10c0/fca27440280cabfb8ce45f19dfeaabf51a17bffd481f9738c728d2984f5056ec1e241861b592de9984ce74b9b4ce8251e532a087f5fce836c3331be2f617e943
+  checksum: 10c0/d88f0664965ccdee2672ed4e69d8b35d14c22b72cd66f9b4cc2c2ee4af1b121a18807e3ebec2e34bf7cf980ba3fa7ef32a254e3065a43b3a488fc5d1169bb223
   languageName: node
   linkType: hard
 
@@ -1676,7 +1676,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "client@workspace:client"
   dependencies:
-    "@lusc/eslint-config": "npm:^2.0.4"
+    "@lusc/eslint-config": "npm:^2.0.6"
     "@lusc/tsconfig": "npm:^5.1.0"
     "@sveltejs/vite-plugin-svelte": "npm:^4.0.0"
     "@tsconfig/svelte": "npm:^5.0.4"
@@ -4389,7 +4389,7 @@ __metadata:
   dependencies:
     "@inquirer/confirm": "npm:^5.0.1"
     "@koa/router": "npm:^13.0.1"
-    "@lusc/eslint-config": "npm:^2.0.4"
+    "@lusc/eslint-config": "npm:^2.0.6"
     "@lusc/tsconfig": "npm:^5.1.0"
     "@types/etag": "npm:^1.8.3"
     "@types/formidable": "npm:^3.4.5"
