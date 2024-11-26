@@ -1,20 +1,20 @@
 {
 	"name": "client",
 	"private": true,
-	"packageManager": "yarn@4.5.2",
+	"packageManager": "yarn@4.5.3",
 	"type": "module",
 	"devDependencies": {
 		"@lusc/eslint-config": "^3.2.0",
-		"@sveltejs/vite-plugin-svelte": "^4.0.1",
+		"@sveltejs/vite-plugin-svelte": "^4.0.2",
 		"@tsconfig/svelte": "^5.0.4",
-		"@typescript-eslint/parser": "^8.15.0",
+		"@typescript-eslint/parser": "^8.16.0",
 		"eslint": "^9.15.0",
 		"eslint-plugin-svelte": "^2.46.0",
 		"sass": "^1.81.0",
-		"svelte": "^5.2.7",
+		"svelte": "^5.2.8",
 		"svelte-check": "^4.1.0",
 		"svelte-eslint-parser": "^0.43.0",
-		"typescript": "^5.6.3",
+		"typescript": "^5.7.2",
 		"vite": "^5.4.11"
 	},
 	"scripts": {
