@@ -1,9 +1,9 @@
 {
 	"name": "file-receiver",
-	"packageManager": "yarn@4.5.2",
+	"packageManager": "yarn@4.5.3",
 	"private": true,
 	"devDependencies": {
-		"prettier": "^3.3.3",
+		"prettier": "^3.4.0",
 		"prettier-plugin-svelte": "^3.3.2"
 	},
 	"scripts": {
