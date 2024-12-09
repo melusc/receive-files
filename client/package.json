@@ -11,11 +11,11 @@
 		"eslint": "^9.16.0",
 		"eslint-plugin-svelte": "^2.46.1",
 		"sass": "^1.82.0",
-		"svelte": "^5.5.3",
+		"svelte": "^5.9.0",
 		"svelte-check": "^4.1.1",
 		"svelte-eslint-parser": "^0.43.0",
 		"typescript": "^5.7.2",
-		"vite": "^6.0.2"
+		"vite": "^6.0.3"
 	},
 	"scripts": {
 		"build": "yarn check && vite build",
