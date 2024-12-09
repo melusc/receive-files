@@ -4,7 +4,7 @@
 	"packageManager": "yarn@4.5.3",
 	"type": "module",
 	"dependencies": {
-		"@inquirer/confirm": "^5.0.2",
+		"@inquirer/confirm": "^5.1.0",
 		"@koa/router": "^13.0.1",
 		"etag": "^1.8.1",
 		"formidable": "^3.5.2",
