@@ -15,7 +15,7 @@
 		"meow": "^13.2.0"
 	},
 	"devDependencies": {
-		"@lusc/eslint-config": "^3.4.2",
+		"@lusc/eslint-config": "^4.0.0",
 		"@lusc/tsconfig": "^5.1.0",
 		"@types/etag": "^1.8.3",
 		"@types/formidable": "^3.4.5",
