@@ -1,3 +1,5 @@
+import {fileURLToPath} from 'node:url';
+
 import Router from '@koa/router';
 import Koa from 'koa';
 import {koaBody} from 'koa-body';
@@ -6,9 +8,8 @@ import {saveFile} from './save-file.ts';
 import {sendStatic} from './send-static.ts';
 import {getNetworkAddress} from './util.ts';
 
-const staticDistributionDirectory = new URL(
-	'../../client/dist/',
-	import.meta.url,
+const staticDistributionDirectory = fileURLToPath(
+	import.meta.resolve('client'),
 );
 
 export class Server {

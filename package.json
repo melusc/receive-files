@@ -7,7 +7,7 @@
 		"prettier-plugin-svelte": "^3.3.2"
 	},
 	"scripts": {
-		"fmt": "prettier -w . **/*.svelte && yarn workspaces foreach -Apiv run fmt",
+		"fmt": "prettier -w . **/*.svelte && yarn workspaces foreach -A --topological-dev run fmt",
 		"build": "yarn workspaces foreach -Apiv run build",
 		"start": "yarn workspace server start",
 		"dev": "yarn workspaces foreach -Apiv run dev",

@@ -1,7 +1,6 @@
 import {createReadStream} from 'node:fs';
 import {stat} from 'node:fs/promises';
 import path from 'node:path';
-import {fileURLToPath} from 'node:url';
 
 import calculate from 'etag';
 import isPathInside from 'is-path-inside';
@@ -12,18 +11,14 @@ const notFound = new Set(['ENOENT', 'ENAMETOOLONG', 'ENOTDIR']);
 export async function sendStatic(
 	context: ParameterizedContext,
 	filename: string,
-	distributionDirectory: URL,
+	distributionDirectory: string,
 ) {
-	const requestedPath = new URL(
-		filename.replace(/^\//, ''),
+	const requestedPath = path.join(
 		distributionDirectory,
+		filename.replace(/^\//, ''),
 	);
-	if (
-		!isPathInside(
-			fileURLToPath(requestedPath),
-			fileURLToPath(distributionDirectory),
-		)
-	) {
+
+	if (!isPathInside(requestedPath, distributionDirectory)) {
 		context.throw(400);
 		return;
 	}

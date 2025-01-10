@@ -1591,7 +1591,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"client@workspace:client":
+"client@workspace:^, client@workspace:client":
   version: 0.0.0-use.local
   resolution: "client@workspace:client"
   dependencies:
@@ -4286,6 +4286,7 @@ __metadata:
     "@types/koa": "npm:^2.15.0"
     "@types/koa__router": "npm:^12.0.4"
     "@types/node": "npm:^22.10.5"
+    client: "workspace:^"
     concurrently: "npm:^9.1.2"
     esbuild: "npm:^0.24.2"
     eslint: "npm:^9.17.0"
