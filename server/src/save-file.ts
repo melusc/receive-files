@@ -1,13 +1,12 @@
-import {copyFile, stat, unlink} from 'node:fs/promises';
+import {stat, writeFile} from 'node:fs/promises';
 import path from 'node:path';
 
 import confirm from '@inquirer/confirm';
-import type {File} from 'formidable';
 
 let isRunning = false;
 const queue: Array<{
 	outDir: string;
-	file: File;
+	file: Express.Multer.File;
 	filename: string;
 	shouldConfirmSave: boolean;
 }> = [];
@@ -38,11 +37,9 @@ async function handle() {
 		}
 
 		if (save) {
-			await copyFile(file.filepath, outPath);
+			await writeFile(outPath, file.buffer);
 			console.log('Saved to "%s"', outPath);
 		}
-
-		await unlink(file.filepath);
 	}
 
 	isRunning = false;
@@ -50,31 +47,25 @@ async function handle() {
 
 export function saveFile(
 	outDirectory: string,
-	file: File | File[],
+	files: Express.Multer.File[],
 	shouldConfirmSave: boolean,
 ): void {
-	if (Array.isArray(file)) {
-		for (const file_ of file) {
-			saveFile(outDirectory, file_, shouldConfirmSave);
+	for (const file of files) {
+		let filename = file.originalname;
+
+		if (!filename) {
+			throw new Error('No filename provided');
 		}
 
-		return;
+		filename = path.basename(filename);
+
+		queue.push({
+			outDir: outDirectory,
+			file,
+			shouldConfirmSave,
+			filename,
+		});
 	}
-
-	let filename = file.originalFilename;
-
-	if (!filename) {
-		throw new Error('No filename provided');
-	}
-
-	filename = path.basename(filename);
-
-	queue.push({
-		outDir: outDirectory,
-		file,
-		shouldConfirmSave,
-		filename,
-	});
 
 	void handle();
 }

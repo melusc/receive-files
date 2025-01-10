@@ -1,1 +1,1 @@
-node "$PSScriptRoot/../server/dist/cli.js" @args
+node "$PSScriptRoot/../server/dist/server.js" @args

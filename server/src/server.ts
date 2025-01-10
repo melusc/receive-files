@@ -1,72 +1,80 @@
 import {fileURLToPath} from 'node:url';
 
-import Router from '@koa/router';
-import Koa from 'koa';
-import {koaBody} from 'koa-body';
+import express from 'express';
+import multer, {memoryStorage} from 'multer';
 
+import {parseArguments as parseArguments} from './arguments.ts';
 import {saveFile} from './save-file.ts';
-import {sendStatic} from './send-static.ts';
 import {getNetworkAddress} from './util.ts';
+
+const config = await parseArguments();
 
 const staticDistributionDirectory = fileURLToPath(
 	import.meta.resolve('client'),
 );
+const multerUpload = multer({
+	storage: memoryStorage(),
+	limits: {
+		// ~100 MB
+		fileSize: 100_000_000,
+	},
+});
 
-export class Server {
-	constructor(
-		public readonly port: number,
-		public readonly outDirectory: string,
-		public readonly confirmSave: boolean,
-	) {
-		const app = new Koa();
-
-		const router = new Router();
-		router.get('/', this.index);
-		router.get('/index.html', context => {
-			context.redirect('/');
-		});
-		router.post('/upload', koaBody({multipart: true}), this.upload);
-		router.get(/.+/, this.static);
-
-		app.use(router.routes());
-
-		app.listen(port, () => {
-			console.log('Running');
-
-			console.log('- Local:	http://localhost:%s/', port);
-
-			const localIpAddress = getNetworkAddress();
-			if (localIpAddress) {
-				console.log('- Network:	http://%s:%s/', localIpAddress, port);
+const app = express();
+app.get('/', (_request, response, next) => {
+	response.sendFile(
+		'index.html',
+		{
+			root: staticDistributionDirectory,
+		},
+		error => {
+			// eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
+			if (error) {
+				next();
 			}
+		},
+	);
+});
+app.get('/index.html', (_request, response) => {
+	response.redirect('/');
+});
 
-			console.log();
-		});
+app.post('/upload', multerUpload.array('file'), (request, response) => {
+	if (request.files && Array.isArray(request.files)) {
+		saveFile(config.outDirectory, request.files, config.confirm);
 	}
 
-	upload: Router.Middleware = context => {
-		const file = context.request.files?.['file'];
+	response.redirect('/');
+});
 
-		if (!file) {
-			context.throw(400);
-			return false;
-		}
+app.get(/.+/, (request, response, next) => {
+	response.sendFile(
+		request.path,
+		{
+			root: staticDistributionDirectory,
+		},
+		error => {
+			// eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
+			if (error) {
+				next();
+			}
+		},
+	);
+});
 
-		try {
-			saveFile(this.outDirectory, file, this.confirmSave);
-		} catch {
-			context.throw(500);
-			return false;
-		}
+app.use((_request, response) => {
+	response.status(404).send('404 - Not found');
+});
 
-		context.body = 'Ok';
-		context.redirect('/');
-		return true;
-	};
+app.listen(config.port, () => {
+	console.log('Running');
 
-	index: Router.Middleware = async context =>
-		sendStatic(context, 'index.html', staticDistributionDirectory);
+	console.log('- Local:	http://localhost:%s/', config.port);
 
-	static: Router.Middleware = async context =>
-		sendStatic(context, context.path, staticDistributionDirectory);
-}
+	const localIpAddress = getNetworkAddress();
+	if (localIpAddress) {
+		console.log('- Network:	http://%s:%s/', localIpAddress, config.port);
+	}
+
+	console.log();
+});

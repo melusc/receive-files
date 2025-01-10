@@ -1,4 +1,4 @@
 basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
 
-node "$basedir/../server/dist/cli.js" "$@"
+node "$basedir/../server/dist/server.js" "$@"
 ret=$?

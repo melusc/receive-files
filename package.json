@@ -19,7 +19,6 @@
 	],
 	"type": "module",
 	"resolutions": {
-		"tsconfig-paths": "^4.2.0",
-		"formidable": "^3.5.2"
+		"@types/express-serve-static-core": "^4.19.6"
 	}
 }
