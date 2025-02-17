@@ -4481,7 +4481,6 @@ __metadata:
     get-port: "npm:^7.1.0"
     multer: "npm:^1.4.5-lts.1"
     rimraf: "npm:^6.0.1"
-    type-fest: "npm:^4.34.1"
     typescript: "npm:^5.7.3"
   languageName: unknown
   linkType: soft
@@ -4924,13 +4923,6 @@ __metadata:
   version: 0.8.1
   resolution: "type-fest@npm:0.8.1"
   checksum: 10c0/dffbb99329da2aa840f506d376c863bd55f5636f4741ad6e65e82f5ce47e6914108f44f340a0b74009b0cb5d09d6752ae83203e53e98b1192cf80ecee5651636
-  languageName: node
-  linkType: hard
-
-"type-fest@npm:^4.34.1":
-  version: 4.34.1
-  resolution: "type-fest@npm:4.34.1"
-  checksum: 10c0/4aa016be91f4225b772d77da91415cd25961a937f84e68d763b2dfeb936ef1671b039bbb0f75019affb8f591c26d65966024343aae75b17ab49db6f9c50c38a8
   languageName: node
   linkType: hard
 
