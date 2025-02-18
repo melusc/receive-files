@@ -20,6 +20,7 @@ async function handle() {
 
 	while (queue.length > 0) {
 		const {outDir, file, shouldConfirmSave, filename} = queue.shift()!;
+		// Avoid saving outside of this directory
 		const outPath = path.resolve(outDir, path.basename(filename));
 
 		let save = true;
@@ -27,6 +28,9 @@ async function handle() {
 			let message: string;
 
 			try {
+				// Check if file already exists
+				// Disable warning because it asks the user
+				// eslint-disable-next-line security/detect-non-literal-fs-filename
 				await stat(outPath);
 				message = `Save and overwrite "${filename}"?`;
 			} catch {
@@ -37,6 +41,7 @@ async function handle() {
 		}
 
 		if (save) {
+			// eslint-disable-next-line security/detect-non-literal-fs-filename
 			await writeFile(outPath, file.buffer);
 			console.log('Saved to "%s"', outPath);
 		}
