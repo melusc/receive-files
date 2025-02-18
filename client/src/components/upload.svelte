@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type {FileKeyed} from '../types.d.ts';
-	import {makeDirectoryInput, uniqueKey} from '../util.ts';
+	import {makeDirectoryInput, uniqueKey} from '../utilities.ts';
 
 	import Files from './files.svelte';
 

@@ -1,7 +1,7 @@
 import {stat} from 'node:fs/promises';
 import path from 'node:path';
 import process, {cwd} from 'node:process';
-import {parseArgs as utilParseArguments} from 'node:util';
+import {parseArgs as utilityParseArguments} from 'node:util';
 
 import getPort from 'get-port';
 
@@ -27,7 +27,7 @@ export type Config = {
 };
 
 export async function parseArguments(): Promise<Config> {
-	const {positionals, values} = utilParseArguments({
+	const {positionals, values} = utilityParseArguments({
 		allowNegative: true,
 		strict: true,
 		options: {
@@ -88,6 +88,9 @@ export async function parseArguments(): Promise<Config> {
 
 async function checkIsDirectory(path: string): Promise<boolean> {
 	try {
+		// Only used to check if directory exists
+		// Path comes from command line flags so trusted
+		// eslint-disable-next-line security/detect-non-literal-fs-filename
 		const stats = await stat(path);
 		return stats.isDirectory();
 	} catch (error: unknown) {

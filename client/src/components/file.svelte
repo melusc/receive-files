@@ -1,5 +1,5 @@
 <script lang="ts">
-	import {formatFileSize} from '../util.ts';
+	import {formatFileSize} from '../utilities.ts';
 
 	import Close from './close.svelte';
 

@@ -5,7 +5,7 @@ import multer, {memoryStorage} from 'multer';
 
 import {parseArguments as parseArguments} from './arguments.ts';
 import {saveFile} from './save-file.ts';
-import {getNetworkAddress} from './util.ts';
+import {getNetworkAddress} from './utilities.ts';
 
 const config = await parseArguments();
 
