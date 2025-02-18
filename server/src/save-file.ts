@@ -5,11 +5,63 @@ import confirm from '@inquirer/confirm';
 
 let isRunning = false;
 const queue: Array<{
-	outDir: string;
+	outDirectory: string;
 	file: Express.Multer.File;
 	filename: string;
 	shouldConfirmSave: boolean;
 }> = [];
+
+// Avoid overwriting existing files
+// Theoretically, there is the chance of a race condition where a file is
+// created after we `stat` to check if it exists, but before we write the remote file
+// We will not concern ourselves with that scenario because there is no built-in way
+// to avoid this scenario and it seems unlikely to happen or difficult to exploit
+async function getAvailableFilename(remoteName: string, outDirectory: string) {
+	remoteName = path.basename(remoteName);
+
+	// Check if remote name can be used without counter
+	const localPath = path.join(outDirectory, remoteName);
+	try {
+		// Local path is safe because it uses `basename`
+		// and only is relevant if the file doesn't exist
+		// eslint-disable-next-line security/detect-non-literal-fs-filename
+		await stat(localPath);
+	} catch {
+		return localPath;
+	}
+
+	const remoteNameParts = remoteName.split('.');
+	let stem: string;
+	let suffix: string | undefined;
+	if (remoteNameParts.length > 1) {
+		stem = remoteNameParts.slice(0, -1).join('.');
+		suffix = remoteNameParts.at(-1)!;
+	} else {
+		stem = remoteName;
+		suffix = undefined;
+	}
+
+	let counter = 1;
+
+	// eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
+	while (true) {
+		let filename = `${stem} (${counter})`;
+		if (suffix) {
+			filename += `.${suffix}`;
+		}
+
+		const localPath = path.join(outDirectory, filename);
+
+		try {
+			// eslint-disable-next-line security/detect-non-literal-fs-filename
+			await stat(localPath);
+		} catch {
+			return localPath;
+		}
+
+		++counter;
+	}
+}
 
 async function handle() {
 	if (isRunning) {
@@ -19,25 +71,13 @@ async function handle() {
 	isRunning = true;
 
 	while (queue.length > 0) {
-		const {outDir, file, shouldConfirmSave, filename} = queue.shift()!;
+		const {outDirectory, file, shouldConfirmSave, filename} = queue.shift()!;
 		// Avoid saving outside of this directory
-		const outPath = path.resolve(outDir, path.basename(filename));
+		const outPath = await getAvailableFilename(filename, outDirectory);
 
 		let save = true;
 		if (shouldConfirmSave) {
-			let message: string;
-
-			try {
-				// Check if file already exists
-				// Disable warning because it asks the user
-				// eslint-disable-next-line security/detect-non-literal-fs-filename
-				await stat(outPath);
-				message = `Save and overwrite "${filename}"?`;
-			} catch {
-				message = `Save "${filename}"?`;
-			}
-
-			save = await confirm({message});
+			save = await confirm({message: `Save ${path.basename(outPath)}`});
 		}
 
 		if (save) {
@@ -65,7 +105,7 @@ export function saveFile(
 		filename = path.basename(filename);
 
 		queue.push({
-			outDir: outDirectory,
+			outDirectory,
 			file,
 			shouldConfirmSave,
 			filename,
