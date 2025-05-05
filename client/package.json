@@ -30,6 +30,6 @@
 	},
 	"exports": "./dist",
 	"dependencies": {
-		"@lusc/tsconfig": "^6.0.2"
+		"@lusc/tsconfig": "^7.0.0"
 	}
 }

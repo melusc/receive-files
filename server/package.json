@@ -15,7 +15,7 @@
 	},
 	"devDependencies": {
 		"@lusc/eslint-config": "^7.1.1",
-		"@lusc/tsconfig": "^6.0.2",
+		"@lusc/tsconfig": "^7.0.0",
 		"@types/express": "^5.0.1",
 		"@types/multer": "^1.4.12",
 		"@types/node": "^22.15.2",
