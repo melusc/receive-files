@@ -4,7 +4,7 @@
 	"private": true,
 	"devDependencies": {
 		"prettier": "^3.5.3",
-		"prettier-plugin-svelte": "^3.3.3"
+		"prettier-plugin-svelte": "^3.4.0"
 	},
 	"scripts": {
 		"fmt": "prettier -w . **/*.svelte && yarn workspaces foreach -A --topological-dev run fmt",
