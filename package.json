@@ -1,6 +1,6 @@
 {
 	"name": "file-receiver",
-	"packageManager": "yarn@4.9.1",
+	"packageManager": "yarn@4.9.2",
 	"private": true,
 	"devDependencies": {
 		"prettier": "^3.5.3",
