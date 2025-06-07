@@ -1,27 +1,27 @@
 {
 	"name": "server",
 	"private": true,
-	"packageManager": "yarn@4.9.1",
+	"packageManager": "yarn@4.9.2",
 	"type": "module",
 	"engines": {
 		"node": ">=22.16.0"
 	},
 	"dependencies": {
-		"@inquirer/confirm": "^5.1.11",
+		"@inquirer/confirm": "^5.1.12",
 		"client": "workspace:^",
 		"express": "^5.1.0",
 		"get-port": "^7.1.0",
-		"multer": "^2.0.0"
+		"multer": "^2.0.1"
 	},
 	"devDependencies": {
 		"@lusc/eslint-config": "^7.2.0",
 		"@lusc/tsconfig": "^7.0.0",
 		"@types/express": "^5.0.2",
 		"@types/multer": "^1.4.12",
-		"@types/node": "^22.15.21",
+		"@types/node": "^22.15.30",
 		"concurrently": "^9.1.2",
-		"esbuild": "^0.25.4",
-		"eslint": "^9.27.0",
+		"esbuild": "^0.25.5",
+		"eslint": "^9.28.0",
 		"rimraf": "^6.0.1",
 		"typescript": "^5.8.3"
 	},
