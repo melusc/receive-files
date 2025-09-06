@@ -25,7 +25,7 @@
 		"fmt": "eslint --fix"
 	},
 	"engines": {
-		"node": ">=22.18.0"
+		"node": "^24.7.0"
 	},
 	"exports": "./dist",
 	"dependencies": {
