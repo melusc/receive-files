@@ -1,7 +1,6 @@
 {
 	"name": "client",
 	"private": true,
-	"packageManager": "yarn@4.9.3",
 	"type": "module",
 	"devDependencies": {
 		"@lusc/eslint-config": "^7.4.2",
@@ -18,9 +17,9 @@
 		"vite": "^6.2.2"
 	},
 	"scripts": {
-		"build": "yarn check && vite build",
+		"build": "pnpm check && vite build",
 		"build:w": "vite build -w",
-		"dev": "yarn build:w",
+		"dev": "pnpm build:w",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"clean": "rimraf dist",
 		"fmt": "eslint --fix"

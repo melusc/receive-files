@@ -1,7 +1,6 @@
 {
 	"name": "server",
 	"private": true,
-	"packageManager": "yarn@4.9.3",
 	"type": "module",
 	"engines": {
 		"node": ">=22.18.0"
@@ -26,12 +25,12 @@
 		"typescript": "^5.9.2"
 	},
 	"scripts": {
-		"build": "yarn clean && yarn tsc && yarn esbuild",
-		"build:w": "yarn build --watch",
+		"build": "pnpm clean && pnpm tsc && pnpm esbuild",
+		"build:w": "pnpm esbuild -- --watch",
 		"esbuild": "esbuild --outdir=dist --format=esm --platform=node --bundle --sourcemap --packages=external src/server.ts",
 		"start:w": "node --watch dist/server.js",
 		"start": "node dist/server.js",
-		"dev": "concurrently yarn:build:w yarn:start:w",
+		"dev": "concurrently pnpm:build:w pnpm:start:w",
 		"clean": "rimraf dist",
 		"fmt": "eslint --fix"
 	}
