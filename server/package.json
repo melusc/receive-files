@@ -3,7 +3,7 @@
 	"private": true,
 	"type": "module",
 	"engines": {
-		"node": "^24.7.0"
+		"node": "^24.8.0"
 	},
 	"dependencies": {
 		"@inquirer/confirm": "^5.1.16",
@@ -17,7 +17,7 @@
 		"@lusc/tsconfig": "^7.1.0",
 		"@types/express": "^5.0.3",
 		"@types/multer": "^2.0.0",
-		"@types/node": "^24.3.1",
+		"@types/node": "^24.3.3",
 		"concurrently": "^9.2.1",
 		"esbuild": "^0.25.9",
 		"eslint": "^9.35.0",
