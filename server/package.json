@@ -6,7 +6,7 @@
 		"node": "^24.8.0"
 	},
 	"dependencies": {
-		"@inquirer/confirm": "^5.1.16",
+		"@inquirer/confirm": "^5.1.18",
 		"client": "workspace:^",
 		"express": "^5.1.0",
 		"get-port": "^7.1.0",
@@ -17,10 +17,10 @@
 		"@lusc/tsconfig": "^7.1.0",
 		"@types/express": "^5.0.3",
 		"@types/multer": "^2.0.0",
-		"@types/node": "^24.4.0",
+		"@types/node": "^24.5.2",
 		"concurrently": "^9.2.1",
-		"esbuild": "^0.25.9",
-		"eslint": "^9.35.0",
+		"esbuild": "^0.25.10",
+		"eslint": "^9.36.0",
 		"rimraf": "^6.0.1",
 		"typescript": "^5.9.2"
 	},
