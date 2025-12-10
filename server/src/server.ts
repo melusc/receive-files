@@ -15,8 +15,8 @@ const staticDistributionDirectory = fileURLToPath(
 const multerUpload = multer({
 	storage: memoryStorage(),
 	limits: {
-		// ~100 MB
-		fileSize: 100_000_000,
+		// ~1 GB
+		fileSize: 1024 ** 3,
 	},
 });
 
