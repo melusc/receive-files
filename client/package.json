@@ -3,7 +3,7 @@
 	"private": true,
 	"type": "module",
 	"devDependencies": {
-		"@lusc/eslint-config": "^8.0.1",
+		"@lusc/eslint-config": "^9.0.0",
 		"@sveltejs/vite-plugin-svelte": "^6.2.0",
 		"@tsconfig/svelte": "^5.0.5",
 		"@typescript-eslint/parser": "^8.44.1",
