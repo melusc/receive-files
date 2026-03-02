@@ -24,7 +24,6 @@ async function getAvailableFilename(remoteName: string, outDirectory: string) {
 	try {
 		// Local path is safe because it uses `basename`
 		// and only is relevant if the file doesn't exist
-		// eslint-disable-next-line security/detect-non-literal-fs-filename
 		await stat(localPath);
 	} catch {
 		return localPath;
@@ -53,7 +52,6 @@ async function getAvailableFilename(remoteName: string, outDirectory: string) {
 		const localPath = path.join(outDirectory, filename);
 
 		try {
-			// eslint-disable-next-line security/detect-non-literal-fs-filename
 			await stat(localPath);
 		} catch {
 			return localPath;
@@ -81,7 +79,6 @@ async function handle() {
 		}
 
 		if (save) {
-			// eslint-disable-next-line security/detect-non-literal-fs-filename
 			await writeFile(outPath, file.buffer);
 			console.log('Saved to "%s"', outPath);
 		}

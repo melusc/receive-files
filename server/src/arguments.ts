@@ -90,7 +90,6 @@ async function checkIsDirectory(path: string): Promise<boolean> {
 	try {
 		// Only used to check if directory exists
 		// Path comes from command line flags so trusted
-		// eslint-disable-next-line security/detect-non-literal-fs-filename
 		const stats = await stat(path);
 		return stats.isDirectory();
 	} catch (error: unknown) {
