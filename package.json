@@ -4,7 +4,7 @@
 	"private": true,
 	"devDependencies": {
 		"prettier": "^3.8.1",
-		"prettier-plugin-svelte": "^3.5.0"
+		"prettier-plugin-svelte": "^3.5.1"
 	},
 	"scripts": {
 		"fmt": "prettier -w . **/*.svelte && pnpm -r fmt",
