@@ -6,3 +6,5 @@ allowBuilds:
   '@parcel/watcher': false
   esbuild: false
   unrs-resolver: false
+
+trustPolicy: no-downgrade
