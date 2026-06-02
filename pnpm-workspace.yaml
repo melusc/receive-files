@@ -8,3 +8,5 @@ allowBuilds:
   unrs-resolver: false
 
 trustPolicy: no-downgrade
+trustPolicyExclude:
+  - chokidar@4.0.3
