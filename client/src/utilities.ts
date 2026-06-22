@@ -21,7 +21,7 @@ export function formatFileSize(bytes: number) {
 
 let counter = 0;
 export function uniqueKey(): string {
-	return `${counter++}`;
+	return String(counter++);
 }
 
 // The types don't allow directory and webkitdirectory
