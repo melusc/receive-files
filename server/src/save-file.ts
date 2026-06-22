@@ -73,10 +73,9 @@ async function handle() {
 		// Avoid saving outside of this directory
 		const outPath = await getAvailableFilename(filename, outDirectory);
 
-		let save = true;
-		if (shouldConfirmSave) {
-			save = await confirm({message: `Save ${path.basename(outPath)}`});
-		}
+		const save =
+			!shouldConfirmSave ||
+			(await confirm({message: `Save ${path.basename(outPath)}`}));
 
 		if (save) {
 			await writeFile(outPath, file.buffer);
