@@ -22,7 +22,7 @@
 		"esbuild": "^0.28.1",
 		"eslint": "^10.6.0",
 		"rimraf": "^6.1.3",
-		"typescript": "^6.0.3"
+		"typescript": "^7.0.2"
 	},
 	"scripts": {
 		"build": "pnpm clean && pnpm tsc && pnpm esbuild",
