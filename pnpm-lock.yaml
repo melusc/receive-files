@@ -40,7 +40,7 @@ importers:
         specifier: ^3.22.0
         version: 3.22.0(eslint@10.8.0(supports-color@10.2.2))(svelte@5.56.8(@typescript-eslint/types@8.65.0))
       sass:
-        specifier: ^1.101.6
+        specifier: ^1.101.7
         version: 1.102.0
       svelte:
         specifier: ^5.56.7
