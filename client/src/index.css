@@ -17,14 +17,16 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-$text: #ddd;
-$bg: #151a1e;
-$theme: #587ef8;
+:root {
+	--text: #ddd;
+	--bg: #151a1e;
+	--theme: #587ef8;
+}
 
 html {
 	font-family: 'Open Sans', system-ui, sans-serif;
-	background: $bg;
-	color: $text;
+	background: var(--bg);
+	color: var(--text);
 }
 
 html,
@@ -66,7 +68,7 @@ button {
 	align-items: center;
 	justify-content: center;
 
-	border: 1px solid $text;
+	border: 1px solid var(--text);
 	padding: 0.3em 0.7em;
 	border-radius: 0.5em;
 }
@@ -77,14 +79,14 @@ button {
 	flex-direction: row;
 	gap: 1em;
 
-	border: 1px solid $text;
+	border: 1px solid var(--text);
 	padding: 1em 1em;
 	border-radius: 0.5em;
 }
 
 button {
 	color: inherit;
-	border: 2px solid $theme;
+	border: 2px solid var(--theme);
 	background: none;
 	font-size: inherit;
 	cursor: pointer;
@@ -93,7 +95,7 @@ button {
 }
 
 .btn-primary {
-	background: $theme;
+	background: var(--theme);
 }
 
 .btn-upload {
