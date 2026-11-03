@@ -47,7 +47,6 @@ app.get('/', (_request, response, next) => {
 			root: staticDistributionDirectory,
 		},
 		error => {
-			// eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
 			if (error) {
 				next();
 			}
@@ -73,7 +72,6 @@ app.get(/.+/, (request, response, next) => {
 			root: staticDistributionDirectory,
 		},
 		error => {
-			// eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
 			if (error) {
 				next();
 			}

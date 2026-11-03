@@ -96,10 +96,10 @@ async function handle() {
 			!shouldConfirmSave ||
 			(await confirm({message: `Save ${path.basename(outPath)}`}));
 
-		if (save) {
-			await writeFile(outPath, file.buffer);
-			console.log('Saved to "%s"', outPath);
-		}
+		if (!save) continue;
+
+		await writeFile(outPath, file.buffer);
+		console.log('Saved to "%s"', outPath);
 	}
 
 	isRunning = false;
