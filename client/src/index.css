@@ -24,7 +24,7 @@
 }
 
 html {
-	font-family: 'Open Sans', system-ui, sans-serif;
+	font-family: system-ui, sans-serif;
 	background: var(--bg);
 	color: var(--text);
 }
